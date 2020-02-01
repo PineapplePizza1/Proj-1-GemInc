@@ -45,9 +45,26 @@ if canShoot{
     {
         canShoot = false;
         alarm[0] = room_speed * shootTimer;
-        var inst = instance_create_layer(x, y, layer, obj_bullet);
+		
 		//set shooting direction
-		if shootRight then inst.rightFace = true;
-		else inst.rightFace = false;
+		if shootRight then shoot_object(obj_bullet, 0, fireSpeed)
+		else shoot_object(obj_bullet,180, fireSpeed)
+
+		
 	}
 }
+
+//METROIDVANIA different abilities structure
+if abilities[0] then fireSpeed = bulletSpeed;
+if abilities[1] then fireSpeed = bulletSpeed + 10;
+
+//current test togggle
+if keyboard_check(ord(1)){
+	abilities[0] = true;
+	abilities[1] = false;
+}
+if keyboard_check(ord(2)){
+	abilities[0] = false;
+	abilities[1] = true;
+}
+//fine tune the details of different firing modes later, as long as abilities array is up, it'll be easy to change certain elements.
