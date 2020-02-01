@@ -145,6 +145,20 @@
             "value": "100",
             "varName": "maxHP",
             "varType": 0
+        },
+        {
+            "id": "d58f5f11-f6cd-4d0e-b338-ade31b94a68e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "bulletSpeed",
+            "varType": 0
         }
     ],
     "solid": false,

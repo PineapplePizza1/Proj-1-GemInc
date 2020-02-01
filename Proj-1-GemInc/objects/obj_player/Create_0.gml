@@ -7,6 +7,7 @@ jumped = false;
 canShoot = true;
 
 shootRight = true;
+fireSpeed = bulletSpeed;
 
 //rarely change
 jumpTimer = .21;
@@ -14,3 +15,8 @@ jumpTimer = .21;
 
 //Player Stats
 hp = maxHP;
+
+
+//metroidvania ability unlock system
+abilities[0] = true;
+abilities[1] = false;
