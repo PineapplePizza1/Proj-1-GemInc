@@ -4,6 +4,9 @@
 //counters
 jumpCounter = 0;
 jumped = false;
+canShoot = true;
+
+shootRight = true;
 
 //rarely change
 jumpTimer = .2;

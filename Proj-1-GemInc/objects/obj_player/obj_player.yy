@@ -43,6 +43,16 @@
             "enumb": 82,
             "eventtype": 9,
             "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
+        },
+        {
+            "id": "eefb4d58-2e2b-4e91-bc7f-2093cf5ad5b9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
         }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
@@ -116,6 +126,20 @@
             "resourceFilter": 1023,
             "value": "-.2",
             "varName": "jumpAccel",
+            "varType": 0
+        },
+        {
+            "id": "b5c08a15-2d04-48d2-ba79-8a790c302cd7",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "shootTimer",
             "varType": 0
         }
     ],
