@@ -19,7 +19,8 @@
         "2aa5a0c8-c961-4b63-8d5b-8d44d16e4951",
         "b0905d13-fbf1-4134-90e7-9e77dd185508",
         "61356c2d-6038-489f-bb08-2fcad61008e2",
-        "df050d0f-8e85-46b7-a294-d3a267f9cd30"
+        "df050d0f-8e85-46b7-a294-d3a267f9cd30",
+        "10bec166-d1ad-402d-b669-b1314e2f9e3e"
     ],
     "IsDnD": false,
     "layers": [
@@ -75,9 +76,35 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "UILayer",
+            "id": "849aec0b-9c0e-4c70-99a1-4270c968c475",
+            "depth": 200,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+{"name": "inst_35088DCA","id": "10bec166-d1ad-402d-b669-b1314e2f9e3e","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_35088DCA","objId": "4a46e4e5-7517-406b-ba0b-5fe15cf693d6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 1248,"y": 128}
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "d493648f-2ba7-4194-8da5-d0271f1e692f",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -116,7 +143,7 @@
             "name": "Flying_Path_Layer1",
             "id": "358a7be5-78aa-4790-b915-3c344f99e3a8",
             "colour": { "Value": 4278190335 },
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -143,7 +170,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4294967295 },
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "4a46e4e5-7517-406b-ba0b-5fe15cf693d6",
+            "Value": {
+                "id": "1024feb8-4b38-444d-bb06-1137e5e7b71b",
+                "resourcePath": "objects\\obj_scoreboard\\obj_scoreboard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e1f24df-2a67-4c86-a237-303817bbe827",
             "Value": {
                 "id": "0d75272b-b785-4780-9000-f186c487329e",
@@ -295,6 +303,14 @@
             }
         },
         {
+            "Key": "ef9701df-502c-4bb9-b884-47a215d8f237",
+            "Value": {
+                "id": "d46d275e-0d2f-4594-a630-e60701c909e2",
+                "resourcePath": "scripts\\add_score\\add_score.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f24d28d6-a1cd-4056-b7b4-4422d476a160",
             "Value": {
                 "id": "d2b05ae7-b21c-493b-989a-e82499588470",
@@ -314,7 +330,8 @@
     "script_order": [
         "b21effc0-ea2c-4740-98d5-eefa8393c1dd",
         "abba4185-7cea-4372-bd20-d39f91b8533d",
-        "2cb50773-3279-4dcc-bc2c-cf5e8aafeeb0"
+        "2cb50773-3279-4dcc-bc2c-cf5e8aafeeb0",
+        "ef9701df-502c-4bb9-b884-47a215d8f237"
     ],
     "tutorial": ""
 }
