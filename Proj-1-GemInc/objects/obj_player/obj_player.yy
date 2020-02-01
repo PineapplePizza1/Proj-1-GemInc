@@ -96,7 +96,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".25",
+            "value": ".4",
             "varName": "gravity",
             "varType": 0
         },
@@ -124,7 +124,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-.2",
+            "value": "-.4",
             "varName": "jumpAccel",
             "varType": 0
         },
@@ -138,8 +138,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": ".5",
             "varName": "shootTimer",
+            "varType": 0
+        },
+        {
+            "id": "b9ec0e7b-719f-4694-a70f-eb70cbddaadb",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "maxHP",
             "varType": 0
         }
     ],

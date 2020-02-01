@@ -9,4 +9,8 @@ canShoot = true;
 shootRight = true;
 
 //rarely change
-jumpTimer = .2;
+jumpTimer = .21;
+
+
+//Player Stats
+hp = maxHP;

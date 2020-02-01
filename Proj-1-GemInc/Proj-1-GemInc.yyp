@@ -39,11 +39,27 @@
             }
         },
         {
+            "Key": "265d172d-2223-4d6e-b23f-242265a5d6f9",
+            "Value": {
+                "id": "36db2002-d0e8-483a-8493-5784cc875243",
+                "resourcePath": "paths\\pth_flyingEnemy1\\pth_flyingEnemy1.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "2cb50773-3279-4dcc-bc2c-cf5e8aafeeb0",
             "Value": {
                 "id": "7e1c80d1-16be-4c65-b82a-b26879d001d9",
                 "resourcePath": "scripts\\damage_enemy\\damage_enemy.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2d34e5b7-2750-4547-afb2-b890646253a5",
+            "Value": {
+                "id": "e6517198-b9d1-4bbe-beaa-dfd95357c89d",
+                "resourcePath": "objects\\obj_flyingEnemy1\\obj_flyingEnemy1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -103,6 +119,14 @@
             }
         },
         {
+            "Key": "834b483e-22b6-4cbc-a949-c5172088f057",
+            "Value": {
+                "id": "2edc7ff3-5267-490c-a491-72d95a379fc1",
+                "resourcePath": "paths\\GGJpath1\\GGJpath1.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "8351945d-14c3-42c1-ad90-f68e0e37d22c",
             "Value": {
                 "id": "9b1f24b7-655a-4072-b945-b38de7884305",
@@ -124,6 +148,14 @@
                 "id": "65e079c7-50dd-4714-8b30-4686c16abad2",
                 "resourcePath": "rooms\\DemoRoomDZ\\DemoRoomDZ.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "933feaf3-cf23-485b-a0c4-d6a0487cc86c",
+            "Value": {
+                "id": "0551e5fd-134f-44f7-a22d-da7163f11403",
+                "resourcePath": "paths\\GGJpath2\\GGJpath2.yy",
+                "resourceType": "GMPath"
             }
         },
         {
