@@ -8,4 +8,11 @@ if instance_exists(obj_player)
 }
 
 //score
-draw_text(16, 64, "Score: " +string(iscore))
+draw_text(16, 64, "Score: " +string(iscore));
+
+
+//LOSE CONDITIONS
+if !instance_exists(obj_player) then lose_condition();
+
+//WIN CONDITIONS
+if !instance_exists(obj_basicEnemy) then win_condition();
