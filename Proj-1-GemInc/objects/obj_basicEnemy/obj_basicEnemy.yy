@@ -33,6 +33,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "9ce81bdc-cf73-4774-b7d0-9e8c5ddf1333",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
         }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
@@ -92,6 +102,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "moveSpeed",
+            "varType": 0
+        },
+        {
+            "id": "16a393db-bfb8-4cb8-bc37-aa7824e78bed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "pointValue",
+            "varType": 0
+        },
+        {
+            "id": "e61dee16-1d1b-4e35-8805-cb470b7d24d9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "playerDamage",
             "varType": 0
         }
     ],
