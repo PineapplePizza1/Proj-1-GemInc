@@ -5,7 +5,7 @@
 
 //AI if statements
 	//if approaching edge
-beh_stay_on_platforms(moveRightPosition, moveLeftPosition);
+beh_stay_on_platforms();
 
 event_inherited();
 

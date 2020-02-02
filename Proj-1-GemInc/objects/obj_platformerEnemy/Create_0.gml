@@ -4,12 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-currentState = "wait";
-dir = 1;
-
-//timeline works by changing current state according to certain time.
-timeline_index = startRoutine; //timeline index is the index of that timeline, like id?
-//start timeline
-timeline_position = 0;
+//new initializations
 timeline_running = true;
 timeline_loop = true;
