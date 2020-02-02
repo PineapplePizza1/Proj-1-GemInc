@@ -8,18 +8,6 @@ platform_state_machine(currentState);
 
 //AI if statements
 	//if approaching edge
-if instance_place(x+(2*sign(hspeed)), y+2, obj_wall)==noone
-{
-	show_debug_message(timeline_position);
-	if hspeed <=0 {
-			//timeline_position = 0; //move right moment
-		}
-		else
-		{
-			//timeline_position = 240; //move left moment
-		}
-	
-}
-
+stay_on_platform_AI(0,240);
 
 event_inherited();

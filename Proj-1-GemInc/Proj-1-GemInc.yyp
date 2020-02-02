@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0c5ba01e-29ed-4d35-80b0-99b47bd92a81",
+            "Value": {
+                "id": "f0c3c410-146e-4084-9e5e-ea1866387518",
+                "resourcePath": "scripts\\stay_on_platform_AI\\stay_on_platform_AI.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0f752650-e3ba-4d9d-b7c9-141a952bbd90",
             "Value": {
                 "id": "a955c98c-7d97-4661-873d-3bde8ca95efb",
@@ -68,6 +76,14 @@
                 "id": "e6517198-b9d1-4bbe-beaa-dfd95357c89d",
                 "resourcePath": "objects\\obj_flyingEnemy1\\obj_flyingEnemy1.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2f390bc4-6d3a-4337-a10f-69f1e3694b97",
+            "Value": {
+                "id": "c0109caf-0d72-4da8-aab2-278e691d9fa1",
+                "resourcePath": "scripts\\jump_off_platform_AI\\jump_off_platform_AI.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -116,6 +132,14 @@
                 "id": "1c034bbd-c4d0-4cef-a088-36552d67030b",
                 "resourcePath": "views\\5a0ba8d7-615f-4704-82e9-fd78ab25c5ce.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5ff7f174-cf9c-4a59-b12a-6ce444660e89",
+            "Value": {
+                "id": "c1cf9ea0-06b1-4f93-9e0b-8825c0681c80",
+                "resourcePath": "scripts\\grounded_gravity\\grounded_gravity.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -194,7 +218,7 @@
             "Key": "9f0fdda3-f91a-422e-bc39-faee648aa765",
             "Value": {
                 "id": "247462e0-e1be-4b99-9116-5d2000277070",
-                "resourcePath": "timelines\\platformCycle1\\platformCycle1.yy",
+                "resourcePath": "timelines\\leftrightCycle1\\leftrightCycle1.yy",
                 "resourceType": "GMTimeline"
             }
         },
@@ -311,6 +335,14 @@
             }
         },
         {
+            "Key": "d16126a3-885b-4481-ae0e-8407c4f2475a",
+            "Value": {
+                "id": "fc5650b8-d331-4e16-94ca-deea48de0d60",
+                "resourcePath": "scripts\\laser_detect_fire_AI\\laser_detect_fire_AI.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d2499c6b-c660-436b-9668-60ddeed0a876",
             "Value": {
                 "id": "c7e5961e-3200-458e-81bd-6cf90be55624",
@@ -407,7 +439,11 @@
         "c23a32b7-dd30-44ee-b8f7-1c0dde65d791",
         "d47ed924-e4d1-4ea9-9a72-8e76dd12ebef",
         "d94175db-4b4a-4826-b5bb-dcb7d1521344",
-        "710038dc-c644-422b-9ca5-1a4fc155b865"
+        "710038dc-c644-422b-9ca5-1a4fc155b865",
+        "5ff7f174-cf9c-4a59-b12a-6ce444660e89",
+        "0c5ba01e-29ed-4d35-80b0-99b47bd92a81",
+        "2f390bc4-6d3a-4337-a10f-69f1e3694b97",
+        "d16126a3-885b-4481-ae0e-8407c4f2475a"
     ],
     "tutorial": ""
 }

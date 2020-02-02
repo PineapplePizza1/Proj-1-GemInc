@@ -2,7 +2,7 @@
     "id": "9f0fdda3-f91a-422e-bc39-faee648aa765",
     "modelName": "GMTimeline",
     "mvc": "1.0",
-    "name": "platformCycle1",
+    "name": "leftrightCycle1",
     "momentList": [
         {
             "id": "11721cb4-f78f-47fe-965d-5239ba7196fe",

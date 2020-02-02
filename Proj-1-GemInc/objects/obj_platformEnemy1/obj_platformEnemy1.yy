@@ -33,7 +33,7 @@
             "mvc": "1.0",
             "objectId": "d1580741-a48f-474c-96a9-225177c0c523",
             "propertyId": "6ce3efc4-7870-451e-8c77-52bfc58750f4",
-            "value": "5"
+            "value": "2"
         }
     ],
     "parentObjectId": "d1580741-a48f-474c-96a9-225177c0c523",
@@ -61,7 +61,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "platformCycle1",
+            "value": "leftrightCycle1",
             "varName": "startRoutine",
             "varType": 5
         },
