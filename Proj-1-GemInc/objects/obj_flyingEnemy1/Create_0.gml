@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-path_start(flightPath, moveSpeed, path_action_continue, true);
+path_start(flightPath, moveSpeed, path_action_continue, false);

@@ -73,7 +73,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": ".4",
-            "varName": "gravity",
+            "varName": "gravVal",
             "varType": 0
         },
         {

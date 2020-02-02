@@ -1,0 +1,1 @@
+currentState = "move left";

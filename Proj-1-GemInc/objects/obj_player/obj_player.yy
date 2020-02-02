@@ -43,6 +43,16 @@
             "enumb": 0,
             "eventtype": 2,
             "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
+        },
+        {
+            "id": "63aae1dd-e0c5-4a6e-a1a0-151780d22c1e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 1,
+            "eventtype": 2,
+            "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
         }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
@@ -87,7 +97,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": ".4",
-            "varName": "gravity",
+            "varName": "gravVal",
             "varType": 0
         },
         {
@@ -158,6 +168,20 @@
             "resourceFilter": 1023,
             "value": "10",
             "varName": "bulletSpeed",
+            "varType": 0
+        },
+        {
+            "id": "82f72fc9-01a8-4159-9005-986e0e49e80f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".5",
+            "varName": "jumpTimer",
             "varType": 0
         }
     ],
