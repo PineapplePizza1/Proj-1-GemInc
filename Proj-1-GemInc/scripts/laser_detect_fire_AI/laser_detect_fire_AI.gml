@@ -1,1 +1,0 @@
-//if spot player, run a firing cycle (arg 0)
