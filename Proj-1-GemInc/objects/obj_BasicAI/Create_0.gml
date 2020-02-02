@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-currentState = "wait";
+currentState = noone;
 dir = 1;
 
 //timeline works by changing current state according to certain time.
@@ -16,3 +16,4 @@ timeline_loop = false;
 
 
 //Change any of these initializations by putting a new definition under event_inherited();
+//Note: for any following implemented AI enemies, make sure to init your enum and states under the event_inherited();

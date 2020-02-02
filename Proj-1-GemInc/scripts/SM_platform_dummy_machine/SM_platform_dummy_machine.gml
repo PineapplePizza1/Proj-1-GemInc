@@ -1,9 +1,9 @@
-//state machine to read states and enact actions with platformers 
-//arg- = state, as a string
+//practice state machine, works with platformer enemies
+//arg0 = current state
 
 switch (argument0){
 	case "walk":
-		hspeed = moveSpeed * dir;
+		act_walk();
 		break;
 	case "jump":
 		act_enemy_jump();
