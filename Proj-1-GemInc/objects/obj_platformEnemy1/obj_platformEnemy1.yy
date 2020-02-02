@@ -66,7 +66,7 @@
             "varType": 5
         },
         {
-            "id": "af67c18a-df53-4fc2-b961-4adbf71efec6",
+            "id": "3a7f88a6-634a-410c-ace3-e6852d008363",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -75,8 +75,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "25",
-            "varName": "bulletSpeed",
+            "value": "0",
+            "varName": "moveRightPosition",
+            "varType": 0
+        },
+        {
+            "id": "f41eea4e-d539-48d5-89d6-7292d9035bb4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "240",
+            "varName": "moveLeftPosition",
             "varType": 0
         }
     ],

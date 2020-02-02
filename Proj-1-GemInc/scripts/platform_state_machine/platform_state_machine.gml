@@ -9,7 +9,7 @@ switch (argument0){
 		hspeed = moveSpeed;
 		break;
 	case "jump":
-		//make jump routine to do timer
+		enemy_jump();
 		break;
 	case "shoot":
 		//pause and shoot, fast. don't forget bullet speed.
