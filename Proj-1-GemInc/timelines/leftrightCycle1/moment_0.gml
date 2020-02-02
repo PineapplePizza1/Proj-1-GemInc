@@ -1,2 +1,0 @@
-currentState = "move right"
-

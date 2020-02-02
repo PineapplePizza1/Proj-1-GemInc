@@ -1,0 +1,3 @@
+//wait
+
+currentState = "wait";
