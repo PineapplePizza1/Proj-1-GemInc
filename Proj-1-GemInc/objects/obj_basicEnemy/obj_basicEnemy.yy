@@ -4,9 +4,48 @@
     "mvc": "1.0",
     "name": "obj_basicEnemy",
     "eventList": [
-        
+        {
+            "id": "6c5c9812-5f70-47ce-9117-559ce60d580d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "0db226a0-a184-4567-9431-a612467dea85",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "515b8368-4589-42c2-8402-3ba57c0b77ef",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "eec8d23b-71a4-4609-8f7e-3752895122a5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "9ce81bdc-cf73-4774-b7d0-9e8c5ddf1333",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        }
     ],
-    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
@@ -22,8 +61,79 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "e428ef57-33b9-4e8a-82d5-aa5ef4afa30e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".4",
+            "varName": "gravVal",
+            "varType": 0
+        },
+        {
+            "id": "8ea08ffe-eccb-472c-a7e7-d1d88380e16f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "maxHP",
+            "varType": 0
+        },
+        {
+            "id": "6ce3efc4-7870-451e-8c77-52bfc58750f4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "moveSpeed",
+            "varType": 0
+        },
+        {
+            "id": "16a393db-bfb8-4cb8-bc37-aa7824e78bed",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "20",
+            "varName": "pointValue",
+            "varType": 0
+        },
+        {
+            "id": "e61dee16-1d1b-4e35-8805-cb470b7d24d9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "30",
+            "varName": "playerDamage",
+            "varType": 0
+        }
+    ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "74252396-ca5a-4269-9fcc-112cf4cd1417",
     "visible": true
 }

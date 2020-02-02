@@ -1,0 +1,2 @@
+vspeed = -jumpHeight;
+jumped = true;
