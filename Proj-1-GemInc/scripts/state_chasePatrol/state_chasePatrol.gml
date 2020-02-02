@@ -2,6 +2,8 @@
 
 //behaviors
 prevdir = sign(dir);
+
+//behaviors
 beh_stay_on_platforms();
 beh_wall_turn();
 
@@ -32,4 +34,3 @@ act_walk();
 //State Change statements
 	//you can have state change statements here, or in the State Machine, whichever is more applicable!
 	
-if beh_detect_player_vision() then currentState = chaseEnum.chase;

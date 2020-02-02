@@ -12,8 +12,9 @@ switch (argument0){
 		state_chaseWait();
 		break;
 	case chaseEnum.idle:
-		//standard, just nothin
 		hspeed = 0;
+		break;
+	case chaseEnum.shoot:
 		break;
 	default:
 		show_debug_message("Error: Out of State Machine");
@@ -22,6 +23,15 @@ switch (argument0){
 }
 
 
+//whenever player is spotted, enter Chase state
+if beh_detect_player_vision() != noone and (timeline_position <440 or timeline_position > 500) {
+	//time period is for wait period
+	currentState = chaseEnum.chase;
+	timeline_position = 250;
+}
+
+//behavior for all states
+beh_jumpable();
 
 //NOTE: you could do the entire stateMachine with a single timeline, if you plan out sections and repeats.
 //then you just jump sections, based on states.

@@ -8,4 +8,5 @@ if playa !=noone
 	{
 		return playa;	
 	}	
+	else return noone;
 }

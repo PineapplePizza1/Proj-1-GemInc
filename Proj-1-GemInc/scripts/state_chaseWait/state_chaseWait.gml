@@ -11,10 +11,10 @@ if timeline_index != basicChaseAI_tl or timeline_position <440 or timeline_posit
 
 	timeline_position = clamp(timeline_position, 440, 521); //give some extra leeway, but make sure you have reset/shift function included
 	
-show_debug_message(timeline_position);
+
 //step functions
 hspeed = 0;
 
-if beh_detect_player_vision() != noone then currentState = chaseEnum.chase;
+
 //if you want to do a more sustained wait, like 1 sec wait, 2 second search, 
 //best idea would be to do it as another state, which should hopefully be easy. timeline wait, that's it.

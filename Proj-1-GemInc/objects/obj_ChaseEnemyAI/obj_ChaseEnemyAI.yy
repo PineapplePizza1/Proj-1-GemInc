@@ -2,7 +2,7 @@
     "id": "debd949c-05ee-48ec-9d9f-4b3428cbe9c8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_ChaseEnemy1",
+    "name": "obj_ChaseEnemyAI",
     "eventList": [
         {
             "id": "a8d56d48-c5b3-492b-9275-18b66c8a60ca",
@@ -58,7 +58,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "4ab2e33b-e65a-4241-bafd-6132d5bfe0ac",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "jumpHeight",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "74252396-ca5a-4269-9fcc-112cf4cd1417",
     "visible": true

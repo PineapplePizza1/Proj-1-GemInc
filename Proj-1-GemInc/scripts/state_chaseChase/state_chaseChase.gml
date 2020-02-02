@@ -1,7 +1,9 @@
 ///Script detailing chase chasing state. SM_basicChaseAI,
-//incomplete, have stuff to add
+//essentially, follow player whenever visible. switch out to wait-state if no longer visible.
 
 
+beh_jump_off_platforms();
+beh_wall_jump();
 
 //set State Timeline
 if timeline_index != basicChaseAI_tl or timeline_position <250 or timeline_position >431{
@@ -16,16 +18,18 @@ if timeline_index != basicChaseAI_tl or timeline_position <250 or timeline_posit
 	
 
 //actions in step
-var meal = instance_find(obj_player, 0);
-act_turnTo(meal);
+var meal = beh_detect_player_vision();
+if meal != noone or timeline_position <310 {
+	act_turnTo(meal);
+}
+else {
+	currentState = chaseEnum.wait;	
+}
+
 act_run(2);
 
 
 
-//behaviors
-beh_jump_off_platforms();
-beh_wall_jump();
-//don't forget about jump states :(
 
 
 //NEED some sort of action to check, if player is above, and there is a jumping point, then to jump.

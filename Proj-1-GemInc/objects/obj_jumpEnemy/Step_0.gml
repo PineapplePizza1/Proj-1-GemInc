@@ -3,12 +3,12 @@
 
 //AI
 //need to increment jumpcounter out here.
-jumpCounter ++;
-jumpCounter = clamp(jumpCounter, 0, jumpTimer);
+
 
 
 beh_jump_off_platforms();
 beh_wall_jump();
+beh_jumpable();
 
 // Inherit the parent event
 event_inherited();
