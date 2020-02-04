@@ -2,8 +2,7 @@
 //essentially, follow player whenever visible. switch out to wait-state if no longer visible.
 
 
-beh_jump_off_platforms();
-beh_wall_jump();
+
 
 //set State Timeline
 if timeline_index != basicChaseAI_tl or timeline_position <250 or timeline_position >431{
@@ -18,15 +17,28 @@ if timeline_index != basicChaseAI_tl or timeline_position <250 or timeline_posit
 	
 
 //actions in step
-var meal = beh_detect_player_vision();
-if meal != noone or timeline_position <310 {
-	act_turnTo(meal);
+sensor = beh_detect_player_vision();
+if sensor != noone then target = sensor;
+
+//start moving
+if target != noone
+{
+	act_turnTo(target);
+	
+	if target.y < y {
+		beh_jump_off_platforms();
+		}
+	beh_wall_jump();
+	
 }
-else {
+
+//advance to wait if you don't
+if sensor == noone and timeline_position>310 {
 	currentState = chaseEnum.wait;	
 }
 
-act_run(2);
+act_speedScale(2);
+act_move();
 
 
 

@@ -1,4 +1,4 @@
-//changes horizontal direction towards an object
+//changes horizontal direction towards an object. just changes dir.
 //arg0 the object ID?
 var next = argument0;
 
