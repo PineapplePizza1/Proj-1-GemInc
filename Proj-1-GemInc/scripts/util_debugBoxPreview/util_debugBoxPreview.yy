@@ -1,8 +1,8 @@
 {
-    "id": "bfcfc91f-3f55-41d9-bc0d-7073033666e2",
+    "id": "f77f4070-d8a4-4ea8-acd7-ae675b9e75db",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "act_run",
+    "name": "util_debugBoxPreview",
     "IsCompatibility": false,
     "IsDnD": false
 }

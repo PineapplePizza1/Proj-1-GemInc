@@ -166,7 +166,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "25",
             "varName": "bulletSpeed",
             "varType": 0
         },
@@ -182,6 +182,20 @@
             "resourceFilter": 1023,
             "value": ".5",
             "varName": "jumpTimer",
+            "varType": 0
+        },
+        {
+            "id": "c65117b3-5fa3-496b-b759-757aad78be43",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "10",
+            "varName": "bulletDamage",
             "varType": 0
         }
     ],

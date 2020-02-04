@@ -1,0 +1,1 @@
+/// @descr Give-up point for Chase - 1 sec

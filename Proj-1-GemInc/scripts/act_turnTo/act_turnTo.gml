@@ -1,5 +1,6 @@
-//changes horizontal direction towards an object
-//arg0 the object ID?
+//changes horizontal direction towards an object. 
+//just changes dir.
+//arg0 the object you want to track.
 var next = argument0;
 
 if next != noone {

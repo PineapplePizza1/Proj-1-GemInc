@@ -1,0 +1,1 @@
+///@descr Pause mark for Wait - 1 sec

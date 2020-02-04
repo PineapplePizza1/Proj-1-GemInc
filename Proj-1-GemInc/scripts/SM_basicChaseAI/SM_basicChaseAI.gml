@@ -4,15 +4,19 @@
 switch (argument0){
 	case chaseEnum.patrol:
 		state_chasePatrol();
+		show_debug_message("State: Patrol");
 		break;
 	case chaseEnum.chase:
 		state_chaseChase();
+		show_debug_message("State: Chase");
 		break;
 	case chaseEnum.wait:
 		state_chaseWait();
+		show_debug_message("State: Wait");
 		break;
 	case chaseEnum.idle:
 		hspeed = 0;
+		show_debug_message("State: Idle");
 		break;
 	case chaseEnum.shoot:
 		break;
@@ -24,14 +28,14 @@ switch (argument0){
 
 
 //whenever player is spotted, enter Chase state
-if beh_detect_player_vision() != noone and (timeline_position <440 or timeline_position > 500) {
+if beh_detect_player_vision() != noone { //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
 	//time period is for wait period
 	currentState = chaseEnum.chase;
 	timeline_position = 250;
 }
 
 //behavior for all states
-beh_jumpable();
+util_jumpable();
 
 //NOTE: you could do the entire stateMachine with a single timeline, if you plan out sections and repeats.
 //then you just jump sections, based on states.

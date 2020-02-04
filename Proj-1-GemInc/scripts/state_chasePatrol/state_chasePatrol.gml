@@ -1,9 +1,9 @@
 ///Script detailing chase patrol state. SM_basicChaseAI,
 
-//behaviors
+//Important setup for checking for turns.
 prevdir = sign(dir);
 
-//behaviors
+//Behaviors
 beh_stay_on_platforms();
 beh_wall_turn();
 
@@ -19,7 +19,7 @@ if timeline_index != basicChaseAI_tl or timeline_position >241{
 
 	timeline_position = clamp(timeline_position, 0, 245); //give some extra leeway, but make sure you have reset function included
 	
-//actions in step
+//Actions
 if prevdir != sign(dir) 
 {
 	//see if drection changed, so you don't get abrupt turnaround.

@@ -1,3 +1,4 @@
-///ensures that there's a direction, and it can turn
-
-hspeed = moveSpeed * dir;
+/// @descr Move at base speed
+//For ease of access. Don't multiply by dir.
+currentSpeed = moveSpeed;
+act_move();

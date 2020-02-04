@@ -15,6 +15,4 @@ if timeline_index != basicChaseAI_tl or timeline_position <440 or timeline_posit
 //step functions
 hspeed = 0;
 
-
-//if you want to do a more sustained wait, like 1 sec wait, 2 second search, 
-//best idea would be to do it as another state, which should hopefully be easy. timeline wait, that's it.
+//waiting period implemented in basicChasestate machine

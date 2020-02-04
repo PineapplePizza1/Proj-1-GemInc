@@ -1,8 +1,7 @@
-/// A wall turn AI, like collisions but will set speed different.
-//arg0 = move right position
-//arg1 = move left position
+/// A wall turn behavior. Similar to horizontal collisions, but just turns.
 
-if instance_place(x+(moveSpeed*dir), y, obj_wall) != noone {
+//use placemeeting, since you don't need the actual instance
+if place_meeting(x+(currentSpeed*dir), y, obj_wall) {
 	act_turn();
 	//for some reason, started needing to use movespeed, for enemy tools
 }
