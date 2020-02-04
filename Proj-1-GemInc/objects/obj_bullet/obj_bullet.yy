@@ -85,6 +85,20 @@
             "value": "True",
             "varName": "rightFace",
             "varType": 3
+        },
+        {
+            "id": "b612aaff-e254-43ae-bcf7-8e31f41ffd91",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bulletDamage",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -1,1 +1,1 @@
-//start wait
+///@descr Start Wait

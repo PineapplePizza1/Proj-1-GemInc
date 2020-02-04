@@ -474,7 +474,7 @@
             "Key": "cbc9cd7f-0d61-49c6-9ef3-36f6c2eaf0ce",
             "Value": {
                 "id": "b585884b-b287-4cf1-bcca-da00cfeab5c2",
-                "resourcePath": "scripts\\beh_jumpable\\beh_jumpable.yy",
+                "resourcePath": "scripts\\util_jumpable\\util_jumpable.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -634,7 +634,7 @@
             "Key": "f77f4070-d8a4-4ea8-acd7-ae675b9e75db",
             "Value": {
                 "id": "1194cae0-50f9-4859-b5cd-3e76a13ea581",
-                "resourcePath": "scripts\\beh_debugBoxPreview\\beh_debugBoxPreview.yy",
+                "resourcePath": "scripts\\util_debugBoxPreview\\util_debugBoxPreview.yy",
                 "resourceType": "GMScript"
             }
         },

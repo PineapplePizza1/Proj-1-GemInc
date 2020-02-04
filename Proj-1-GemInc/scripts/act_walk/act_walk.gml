@@ -1,4 +1,4 @@
-///basic moving, but locked at base moveSpeed. and sets currentSpeed as a courtesy.
-
-hspeed = moveSpeed * dir;
-currentSpeed = hspeed;
+/// @descr Move at base speed
+//For ease of access. Don't multiply by dir.
+currentSpeed = moveSpeed;
+act_move();

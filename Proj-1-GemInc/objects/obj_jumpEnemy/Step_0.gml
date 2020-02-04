@@ -8,7 +8,7 @@
 
 beh_jump_off_platforms();
 beh_wall_jump();
-beh_jumpable();
+util_jumpable();
 
 // Inherit the parent event
 event_inherited();
