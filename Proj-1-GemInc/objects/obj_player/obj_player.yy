@@ -96,7 +96,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".4",
+            "value": ".7",
             "varName": "gravVal",
             "varType": 0
         },
@@ -110,7 +110,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-7",
+            "value": "-10",
             "varName": "jumpHeight",
             "varType": 0
         },
