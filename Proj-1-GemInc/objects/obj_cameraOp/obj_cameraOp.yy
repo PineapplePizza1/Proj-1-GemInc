@@ -69,6 +69,20 @@
             "value": "obj_player",
             "varName": "followObj",
             "varType": 5
+        },
+        {
+            "id": "feb31713-c20a-4354-8330-4de4be2af1e5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "128",
+            "varName": "followBorder",
+            "varType": 0
         }
     ],
     "solid": false,

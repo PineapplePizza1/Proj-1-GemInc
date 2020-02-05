@@ -2,11 +2,53 @@
 // You can write your code in this editor
 
 var defCam = view_get_camera(0);
+
 if instance_exists(followObj) {
-	var currentRoom = obj_player.currRoom;
-	camera_set_view_pos(defCam, currentRoom.x, currentRoom.y);
-	camera_set_view_size(defCam, currentRoom.RB_width, currentRoom.RB_height);
-	show_debug_message(defCam);
+	var cRoom = followObj.currRoom;
+	if cRoom != noone{
+		//basic vers
+		
+		camera_set_view_pos(defCam, cRoom.x -(cRoom.RB_width/2), cRoom.y-(cRoom.RB_height/2));
+		camera_set_view_size(defCam, cRoom.RB_width, cRoom.RB_height);
+		
+		
+		/*
+		//camera following code
+		//need to fix and get accurate clamps.
+		
+		var posx = followObj.x;
+		var posy = followObj.y;
+		if followObj.x < (x+followBorder) then posx = followObj.x - followBorder; 
+		if followObj.x > x+camera_get_view_width(defCam) - followBorder{
+			posx = (followObj.x + followBorder) - camera_get_view_width(defCam);
+		}
+		if followObj.y < (y+followBorder) then posy = followObj.y - followBorder; 
+		if followObj.y > y+camera_get_view_height(defCam) - followBorder{
+			posy = (followObj.y + followBorder) - camera_get_view_height(defCam);
+		}
+			
+		
+		//limit camera inside box
+		var xmin = cRoom.x - (cRoom.RB_width/2);
+		var xmax = cRoom.x + (cRoom.RB_width/2) - camera_get_view_width(defCam);
+		posx = clamp(x, xmin, xmax);
+		
+		var ymin = cRoom.y - (cRoom.RB_height/2);
+		var ymax = cRoom.y + (cRoom.RB_height/2) - camera_get_view_height(defCam);
+		posy = clamp(y, ymin, ymax);
+		
+		if (cRoom.RB_width - camera_get_view_width(defCam) >= 0) then x = cRoom.x;
+		if (cRoom.RB_height - camera_get_view_height(defCam)) >= 0 then y = cRoom.y;
+		
+			//if room is biger than cam, just set to room x and y
+			//camera origin is top left
+			
+		camera_set_view_pos(defCam, posx, posy);
+		*/
+		
+		
+		
+	}
 
 }
 

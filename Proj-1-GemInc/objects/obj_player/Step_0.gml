@@ -72,9 +72,13 @@ if keyboard_check(ord(2)){
 
 //Camera Operations
 currRoom = instance_position(x,y, obj_roomBox);
+/* Doesn't work yet, fix cameras first
+if currRoom == noone {
+	lose_condition();
+	instance_destroy();
+}
 
-
-
+*/
 
 //Collisions
 if vspeed !=0 then collisions_vertical();
