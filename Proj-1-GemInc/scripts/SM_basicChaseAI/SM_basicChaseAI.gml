@@ -4,19 +4,15 @@
 switch (argument0){
 	case chaseEnum.patrol:
 		state_chasePatrol();
-		show_debug_message("State: Patrol");
 		break;
 	case chaseEnum.chase:
 		state_chaseChase();
-		show_debug_message("State: Chase");
 		break;
 	case chaseEnum.wait:
 		state_chaseWait();
-		show_debug_message("State: Wait");
 		break;
 	case chaseEnum.idle:
 		hspeed = 0;
-		show_debug_message("State: Idle");
 		break;
 	case chaseEnum.shoot:
 		break;

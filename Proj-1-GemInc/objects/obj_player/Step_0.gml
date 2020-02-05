@@ -18,13 +18,16 @@ if keyboard_check(vk_up) and jumpCounter < (jumpHold*room_speed){
 		jumped = true;
 		alarm[1] = room_speed * jumpTimer; //Makes it so you can't constantly jump.
 	}
-	vspeed += jumpAccel;
+	if !endHold then vspeed += jumpAccel;
 }
 
+if keyboard_check_released(vk_up) then endHold = true;
+
 //reset all variables on touchdown
-if instance_place(x, y+2, obj_wall)!=noone{ //apparently, need at least +2 to activate.
+if place_meeting(x, y+1, obj_wall){ //apparently, need at least +2 to activate.
 	jumpCounter = 0;
 	gravity = 0;
+	endHold = false;
 }
 else {
 	jumpCounter +=1; //increase timer in air, not just with press.
@@ -65,6 +68,12 @@ if keyboard_check(ord(2)){
 	abilities[1] = true;
 }
 //fine tune the details of different firing modes later, as long as abilities array is up, it'll be easy to change certain elements.
+
+
+//Camera Operations
+currRoom = instance_position(x,y, obj_roomBox);
+
+
 
 
 //Collisions

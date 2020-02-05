@@ -434,7 +434,7 @@
             "Key": "c03831df-790d-4d46-9a7b-2cae0e006a62",
             "Value": {
                 "id": "66d739d0-486f-4e79-8380-612c67cbdf0a",
-                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourcePath": "objects\\obj_cameraOp\\obj_cameraOp.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -556,6 +556,14 @@
                 "id": "fd3514dd-0d6b-4dc8-8f17-400899ea5dc1",
                 "resourcePath": "timelines\\patrolTimeline1\\patrolTimeline1.yy",
                 "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "ddb0a52e-59c3-449e-b0df-8886e2e3c1c5",
+            "Value": {
+                "id": "77b33d23-f00f-4822-972d-0a9f1175e8a3",
+                "resourcePath": "sprites\\spr_box\\spr_box.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,6 +1,17 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var defCam = view_get_camera(0);
+if instance_exists(followObj) {
+	var currentRoom = obj_player.currRoom;
+	camera_set_view_pos(defCam, currentRoom.x, currentRoom.y);
+	camera_set_view_size(defCam, currentRoom.RB_width, currentRoom.RB_height);
+	show_debug_message(defCam);
+
+}
+
+
+
 //2 parts to the metroidvania system
 //preset room objects. give the X and Y of room/screen, and show doors/transitions.
 	//have an array of door objects, that connect to a room. Should hold a room, and transition to it.
