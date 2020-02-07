@@ -33,7 +33,7 @@ if beh_detect_player_vision() != noone and currentState != chaseEnum.disabled { 
 	timeline_position = 250;
 }
 
-show_debug_message(currentState)
+//show_debug_message(currentState)
 
 //behavior for all states
 util_jumpable();

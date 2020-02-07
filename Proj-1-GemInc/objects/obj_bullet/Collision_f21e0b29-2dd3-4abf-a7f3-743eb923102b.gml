@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 //damage_enemy(other, 10);
-other.currentState = chaseEnum.disabled;
+disable_enemy(other, dmgVal);
+show_debug_message(dmgVal);
 
 instance_destroy();

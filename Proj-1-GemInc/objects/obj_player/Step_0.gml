@@ -21,18 +21,23 @@ if keyboard_check(vk_up) and jumpCounter < (jumpHold*room_speed){
 	if !endHold then vspeed += jumpAccel;
 }
 
+//acceleration timer
+if jumped then jumpCounter +=1; 
+jumpCounter = clamp(jumpCounter, -1, jumpHold*room_speed + 10);
+
 if keyboard_check_released(vk_up) then endHold = true;
 
 //reset all variables on touchdown
-if place_meeting(x, y+1, obj_wall){ //apparently, need at least +2 to activate.
-	jumpCounter = 0;
+if place_meeting(x, y+1, obj_wall){ //apparently, need at least +2 to activate
 	gravity = 0;
-	endHold = false;
+	jumpCounter = 0;
+
 }
 else {
-	jumpCounter +=1; //increase timer in air, not just with press.
 	gravity = gravVal;
 }
+
+
 
 
 //Shooting
@@ -47,38 +52,32 @@ if canShoot{
         alarm[0] = room_speed * shootTimer;
 		
 		//set shooting direction
-		if shootRight then shoot_object(obj_bullet, 0, fireSpeed)
-		else shoot_object(obj_bullet,180, fireSpeed)
+		if shootRight then player_shoot(0)
+		else player_shoot(180);
 
 		
 	}
 }
 
-//METROIDVANIA different abilities structure
-if abilities[0] then fireSpeed = bulletSpeed;
-if abilities[1] then fireSpeed = bulletSpeed + 10;
-
-//current test togggle
-if keyboard_check(ord(1)){
-	abilities[0] = true;
-	abilities[1] = false;
-}
-if keyboard_check(ord(2)){
-	abilities[0] = false;
-	abilities[1] = true;
-}
 //fine tune the details of different firing modes later, as long as abilities array is up, it'll be easy to change certain elements.
+
+
+//MV state upgrades debug
+
+if keyboard_check(ord("1")) then mv_shotUpgrade = 1;
+if keyboard_check(ord("2")) then mv_shotUpgrade = 2;
+
 
 
 //Camera Operations
 currRoom = instance_position(x,y, obj_roomBox);
-/* Doesn't work yet, fix cameras first
+// Doesn't work yet, fix cameras first
 if currRoom == noone {
 	lose_condition();
 	instance_destroy();
 }
 
-*/
+
 
 //Collisions
 if vspeed !=0 then collisions_vertical();

@@ -19,11 +19,13 @@ currRoom = noone;
 jumpHold = .21;
 
 
-//Player Stats
+//Player Stats initialize
 hp = maxHP;
 gravity = gravVal;
 
 
 //metroidvania ability unlock system
-abilities[0] = true;
-abilities[1] = false;
+//0 means do not have, 1 means level 1, 2 means lvl 2, etc.
+mv_shotUpgrade = 0;
+mv_jumpUpgrade = 0;
+mv_stealthUpgrade = 0;
