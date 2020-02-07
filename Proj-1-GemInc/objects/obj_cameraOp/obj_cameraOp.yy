@@ -83,6 +83,34 @@
             "value": "75",
             "varName": "followBorder",
             "varType": 0
+        },
+        {
+            "id": "50a2d946-3ed4-405d-b5eb-9e4e1b9e4195",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "960",
+            "varName": "cameraWidth",
+            "varType": 0
+        },
+        {
+            "id": "c108d9f5-9b05-4335-beee-4658f4669166",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "720",
+            "varName": "cameraHeight",
+            "varType": 0
         }
     ],
     "solid": false,

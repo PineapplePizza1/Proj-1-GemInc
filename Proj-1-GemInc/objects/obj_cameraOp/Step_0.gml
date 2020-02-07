@@ -30,7 +30,6 @@ if instance_exists(followObj) {
 		currX = clamp(currX, cRoom.x, cRoom.x+(cRoom.RB_width - camera_get_view_width(defCam)));
 		currY = clamp(currY, cRoom.y, cRoom.y+(cRoom.RB_height - camera_get_view_height(defCam)));
 		
-		show_debug_message("At: " + string(currX) + ", " + string(currY));
 		
 		
 		camera_set_view_pos(defCam, currX, currY);

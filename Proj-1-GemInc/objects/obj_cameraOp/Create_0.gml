@@ -2,14 +2,12 @@
 // You can write your code in this editor
 
 //Camera Variables
-view_xmin = 0;
-view_xmax = 480;
-view_ymin = 0;
-view_ymax = 270;
 
-defCam = camera_create_view(0, 0, 480, 270);
+defCam = camera_create_view(0, 0, cameraWidth, cameraHeight);
+
 var destroycam = view_get_camera(0);
 camera_destroy(destroycam);
+	//Destroying camera, because certain camera functions only work with cameras you create.
 view_set_camera(0, -1);
 view_set_camera(0, defCam);
 

@@ -14,6 +14,9 @@ switch (argument0){
 	case chaseEnum.idle:
 		hspeed = 0;
 		break;
+	case chaseEnum.disabled:
+		state_chaseDisabled();
+		break;
 	case chaseEnum.shoot:
 		break;
 	default:
@@ -24,11 +27,13 @@ switch (argument0){
 
 
 //whenever player is spotted, enter Chase state
-if beh_detect_player_vision() != noone { //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
+if beh_detect_player_vision() != noone and currentState != chaseEnum.disabled { //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
 	//time period is for wait period
 	currentState = chaseEnum.chase;
 	timeline_position = 250;
 }
+
+show_debug_message(currentState)
 
 //behavior for all states
 util_jumpable();
