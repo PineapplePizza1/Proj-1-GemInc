@@ -1,50 +1,39 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var defCam = view_get_camera(0);
 
 if instance_exists(followObj) {
-	var cRoom = followObj.currRoom;
+	var nRoom = followObj.currRoom;
+	if nRoom != noone then cRoom = nRoom;
+	
 	if cRoom != noone{
 		//basic vers
 		
-		camera_set_view_pos(defCam, cRoom.x -(cRoom.RB_width/2), cRoom.y-(cRoom.RB_height/2));
-		camera_set_view_size(defCam, cRoom.RB_width, cRoom.RB_height);
 		
+		currX = camera_get_view_x(defCam);
+		currY = camera_get_view_y(defCam);
 		
-		/*
-		//camera following code
-		//need to fix and get accurate clamps.
-		
-		var posx = followObj.x;
-		var posy = followObj.y;
-		if followObj.x < (x+followBorder) then posx = followObj.x - followBorder; 
-		if followObj.x > x+camera_get_view_width(defCam) - followBorder{
-			posx = (followObj.x + followBorder) - camera_get_view_width(defCam);
+		var spradiusX = followObj.sprite_width/2;
+		var spradiusY = followObj.sprite_height/2;
+	
+		if followObj.x < (currX+followBorder) then currX -= followObj.moveSpeed;
+		if followObj.x > currX+camera_get_view_width(defCam) - followBorder{
+			currX += followObj.moveSpeed;
 		}
-		if followObj.y < (y+followBorder) then posy = followObj.y - followBorder; 
-		if followObj.y > y+camera_get_view_height(defCam) - followBorder{
-			posy = (followObj.y + followBorder) - camera_get_view_height(defCam);
+
+		if followObj.y < (currY+followBorder) then currY -= 5;
+		if followObj.y > (currY+camera_get_view_height(defCam) - followBorder ){
+			currY += 5;
 		}
-			
 		
-		//limit camera inside box
-		var xmin = cRoom.x - (cRoom.RB_width/2);
-		var xmax = cRoom.x + (cRoom.RB_width/2) - camera_get_view_width(defCam);
-		posx = clamp(x, xmin, xmax);
+		//camera_set_view_pos(defCam, cRoom.x-(cRoom.RB_height/2), cRoom.y-(cRoom.RB_height/2));
+		currX = clamp(currX, cRoom.x, cRoom.x+(cRoom.RB_width - camera_get_view_width(defCam)));
+		currY = clamp(currY, cRoom.y, cRoom.y+(cRoom.RB_height - camera_get_view_height(defCam)));
 		
-		var ymin = cRoom.y - (cRoom.RB_height/2);
-		var ymax = cRoom.y + (cRoom.RB_height/2) - camera_get_view_height(defCam);
-		posy = clamp(y, ymin, ymax);
+		show_debug_message("At: " + string(currX) + ", " + string(currY));
 		
-		if (cRoom.RB_width - camera_get_view_width(defCam) >= 0) then x = cRoom.x;
-		if (cRoom.RB_height - camera_get_view_height(defCam)) >= 0 then y = cRoom.y;
 		
-			//if room is biger than cam, just set to room x and y
-			//camera origin is top left
-			
-		camera_set_view_pos(defCam, posx, posy);
-		*/
+		camera_set_view_pos(defCam, currX, currY);
 		
 		
 		

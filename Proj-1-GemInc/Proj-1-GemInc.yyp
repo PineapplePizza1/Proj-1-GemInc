@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "529486e4-ef00-4d86-be28-0953d7eb68f1",
+            "Value": {
+                "id": "008db4b0-fc56-4e56-8683-32ee4885b6ca",
+                "resourcePath": "sprites\\spr_Axis\\spr_Axis.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5a0ba8d7-615f-4704-82e9-fd78ab25c5ce",
             "Value": {
                 "id": "1c034bbd-c4d0-4cef-a088-36552d67030b",
