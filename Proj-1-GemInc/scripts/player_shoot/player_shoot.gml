@@ -1,6 +1,7 @@
 //Fire a bullet, based on your upgrade level. then shoot
 //argument 0 = direction of shot
 //rest of values are inferred by player state.
+//As upgrades happen, send upgrades to bullets, via moving platforms
 
 var shotDamage = 0;
 

@@ -14,7 +14,7 @@ hspeed = (keyboard_check(vk_right) - keyboard_check(vk_left)) * moveSpeed;
 if keyboard_check(vk_up) and jumpCounter < (jumpHold*room_speed){
 	//Initial Jump - check key pressed is too unreliable.
 	if !(jumped){
-		vspeed = jumpHeight;
+		player_jump();// Jump script
 		jumped = true;
 		alarm[1] = room_speed * jumpTimer; //Makes it so you can't constantly jump.
 	}
@@ -64,8 +64,14 @@ if canShoot{
 
 //MV state upgrades debug
 
-if keyboard_check(ord("1")) then mv_shotUpgrade = 1;
-if keyboard_check(ord("2")) then mv_shotUpgrade = 2;
+if keyboard_check(ord("1")){
+	mv_shotUpgrade = 1;
+	mv_jumpUpgrade = 1;
+}
+if keyboard_check(ord("2")){
+	mv_shotUpgrade = 2;
+	mv_jumpUpgrade = 2;
+}
 
 
 
