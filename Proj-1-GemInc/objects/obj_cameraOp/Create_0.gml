@@ -1,5 +1,6 @@
-/// @description Insert description here
+/// @description Camera work setup
 // You can write your code in this editor
+//NOTE: default view will be in viewport 0, minimap in viewport 2.
 
 //Camera Variables
 
