@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-instance_destroy();
+path_start(MovePath, moveSpeed, endAct, false);

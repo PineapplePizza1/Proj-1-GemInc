@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0a93abcb-4cd7-451c-bf0d-88899dbe6af2",
+            "Value": {
+                "id": "9a365196-819e-4468-a84b-bf373b389512",
+                "resourcePath": "paths\\PlatformPath1\\PlatformPath1.yy",
+                "resourceType": "GMPath"
+            }
+        },
+        {
             "Key": "0adf95b7-0061-48a2-bc53-b491f87fe993",
             "Value": {
                 "id": "aaf8e879-ca9b-4f72-9aba-157b348b0455",

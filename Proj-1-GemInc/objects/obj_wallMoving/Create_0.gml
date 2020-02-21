@@ -4,5 +4,8 @@
 //add boolean to activate the path from a separate object.
 //add boolean as variable def to say if object loops, and runtime, maybe later.
 
-moveActive = false;
 //pathset.
+if repeats == true then endAct = path_action_reverse
+else endAct = path_action_stop;
+
+

@@ -13,11 +13,21 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "3749651d-cfe1-47a9-9423-af6a37839bca"
+        },
+        {
+            "id": "2ff2fe6d-ae96-45d2-8b38-8eaabd4e5379",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "0adf95b7-0061-48a2-bc53-b491f87fe993",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "3749651d-cfe1-47a9-9423-af6a37839bca"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "116c1ecb-fb61-4a96-97dd-92640e990433",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -42,7 +52,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "DoorLift1",
             "varName": "MovePath",
             "varType": 5
         },
@@ -59,6 +69,20 @@
             "value": "False",
             "varName": "repeats",
             "varType": 3
+        },
+        {
+            "id": "0fffaeaa-bb0f-4be4-8d4f-ca060be08032",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "moveSpeed",
+            "varType": 0
         }
     ],
     "solid": false,
