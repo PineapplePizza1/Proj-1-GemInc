@@ -5,16 +5,6 @@
     "name": "obj_ChaseEnemyAI",
     "eventList": [
         {
-            "id": "a8d56d48-c5b3-492b-9275-18b66c8a60ca",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "debd949c-05ee-48ec-9d9f-4b3428cbe9c8"
-        },
-        {
             "id": "e1e2a255-fb2f-44d5-a2c8-a2d7a58cf378",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -78,6 +78,20 @@
             "value": "SM_platform_dummy_machine",
             "varName": "stateMachine",
             "varType": 5
+        },
+        {
+            "id": "c6cbbe24-6c24-4c54-a923-45a87a4e60a9",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "sm_basicChaseAI_INIT",
+            "varName": "initScript",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -3,3 +3,6 @@
 
 //speed should be set by creator object.
 //so should bullet dmg
+
+//damage value, can be set by creator
+dmgVal = noone;
