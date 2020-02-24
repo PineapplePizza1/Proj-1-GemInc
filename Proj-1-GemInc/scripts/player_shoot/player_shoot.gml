@@ -11,8 +11,8 @@ switch (mv_shotUpgrade)
 	case 0:
 		break;
 	case 1:
-		//disable for 1 sec
-		shotDamage = .5;
+		//do 50 damage
+		shotDamage = 50;
 		bulletUpgr = obj_bullet;
 		break;
 	case 2:

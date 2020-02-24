@@ -31,7 +31,36 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "5dfa205e-b0ce-4093-af44-3614561ff07b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "15",
+            "varName": "bulletSpeed",
+            "varType": 0
+        },
+        {
+            "id": "08b9bf47-7ce1-49ba-bb28-9fe4878d7ef1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "55",
+            "varName": "bulletDamage",
+            "varType": 0
+        }
+    ],
     "solid": false,
     "spriteId": "74252396-ca5a-4269-9fcc-112cf4cd1417",
     "visible": true
