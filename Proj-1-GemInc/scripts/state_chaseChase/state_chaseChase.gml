@@ -17,6 +17,8 @@ if timeline_index != basicChaseAI_tl or timeline_position <250 or timeline_posit
 	
 
 //Actions
+if !util_player_exists() then exit;
+
 sensor = beh_detect_player_vision();
 if sensor != noone then target = sensor;
 

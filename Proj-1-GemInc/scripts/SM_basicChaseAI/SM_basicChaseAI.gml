@@ -17,7 +17,7 @@ switch (argument0){
 	case chaseEnum.disabled:
 		state_chaseDisabled();
 		break;
-	case chaseEnum.shoot:
+	case chaseEnum.shoot: //no shooting
 		break;
 	default:
 		show_debug_message("Error: Out of State Machine");

@@ -5,3 +5,4 @@
 //arg3 = bulletspeed
 //timeline is alright to use, btw. since timelines represent states, if anytime we need to continue in the same spot, we can adjust easily in state machine, though that shouldn't be often.
 
+show_debug_message("I am Shuut");

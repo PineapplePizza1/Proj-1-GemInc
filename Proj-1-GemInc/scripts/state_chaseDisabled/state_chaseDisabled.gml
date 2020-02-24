@@ -1,3 +1,5 @@
+//this is for disabling state damage.
+
 disableCounter +=1;
 
 if disableCounter >= disableTimer
