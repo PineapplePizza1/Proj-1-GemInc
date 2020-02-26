@@ -5,16 +5,6 @@
     "name": "obj_scoreboard",
     "eventList": [
         {
-            "id": "52d4cb97-48e0-41ec-91d9-eab658412e2b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "4a46e4e5-7517-406b-ba0b-5fe15cf693d6"
-        },
-        {
             "id": "8eb93317-e773-42cf-9d5d-2a8cde5e46a9",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -42,6 +32,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 27,
             "eventtype": 9,
+            "m_owner": "4a46e4e5-7517-406b-ba0b-5fe15cf693d6"
+        },
+        {
+            "id": "ba44e0c4-249a-47a5-9433-cb0fa2e4049a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
             "m_owner": "4a46e4e5-7517-406b-ba0b-5fe15cf693d6"
         }
     ],
