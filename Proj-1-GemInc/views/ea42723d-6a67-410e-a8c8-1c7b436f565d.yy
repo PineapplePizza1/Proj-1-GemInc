@@ -6,7 +6,8 @@
     "children": [
         "5a93d1cd-16e4-4857-b938-226fc8366cc0",
         "18e579d0-ea92-4f57-9a11-c864f091d918",
-        "3b9cf8a6-aca9-45e6-a15b-c7a70a7ab648"
+        "3b9cf8a6-aca9-45e6-a15b-c7a70a7ab648",
+        "2cea7787-7bba-4953-89d1-5ba0de21c168"
     ],
     "filterType": "GMScript",
     "folderName": "Enemy AI State Scripts",

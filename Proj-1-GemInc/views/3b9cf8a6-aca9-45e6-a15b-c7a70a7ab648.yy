@@ -17,7 +17,8 @@
         "4efda974-acee-4051-9fd3-fb2fe52768d5",
         "1a10a5ba-8b3a-4bb2-bd61-5dea8c15ad14",
         "5edb5557-a2e1-4bbd-bf28-73cd4b345778",
-        "b8ac5db2-b1d7-4aff-8bed-109e1c09d8fd"
+        "b8ac5db2-b1d7-4aff-8bed-109e1c09d8fd",
+        "9cd47a47-6ceb-4915-b982-232671b7fd9d"
     ],
     "filterType": "GMScript",
     "folderName": "Actions and Behaviors",
