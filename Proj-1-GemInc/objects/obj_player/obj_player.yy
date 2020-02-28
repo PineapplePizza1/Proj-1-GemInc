@@ -174,7 +174,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-.4",
+            "value": "-1",
             "varName": "jumpAccel",
             "varType": 0
         },
@@ -230,8 +230,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".25",
-            "varName": "jumpTimer",
+            "value": ".5",
+            "varName": "landTimer",
             "varType": 0
         },
         {
@@ -264,6 +264,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "529486e4-ef00-4d86-be28-0953d7eb68f1",
+    "spriteId": "74252396-ca5a-4269-9fcc-112cf4cd1417",
     "visible": true
 }

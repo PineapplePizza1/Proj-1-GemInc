@@ -1,28 +1,62 @@
 /// @description Initialize
 // Last Changed: Dillon 2/1/20
 
-//counters
+#region Enums and States
+//Player's states are more complicated and less finite. Mainly used for sprites and damage.
+
+enum playerStates
+{
+	standing,
+	moving,
+	jumping,
+	landed,
+	damaged,
+	respawn,
+	stealthed
+	
+}
+enum faceDir
+{
+	left,
+	right
+}
+
+currentState = playerStates.standing;
+currFace = faceDir.right;
+
+#endregion
+
+
+#region jump variables
 jumpCounter = 0;
 jumped = false;
+endHold = false; 
+jumpHold = .21; //rarely changes
+#endregion
+
+#region shoot variables
 canShoot = true;
-endHold = false; // need additional variable to see if player let go of key
-//probably want to script jump at some point.
-
-shootRight = true;
 fireSpeed = bulletSpeed;
+#endregion
 
+#region Health variables
+hp = maxHP;
+gravity = gravVal;
+damaged = false;
+#endregion
+
+
+#region Camera values
 //current room, important for camera
 currRoom = noone;
 
-
-//rarely change
-jumpHold = .21;
+#endregion
 
 
-//Player Stats initialize
-hp = maxHP;
-gravity = gravVal;
 
+
+
+#region Shader values
 //shader pixel values and texel value initialization
 upixelH = shader_get_uniform(shd_defShader1, "pixelH");
 upixelW = shader_get_uniform(shd_defShader1, "pixelW");
@@ -39,16 +73,16 @@ color_array[1] = 0/255.0;
 color_array[2] = 255/255.0;
 color_array[3] = 1.0;
 
-damaged = false;
+
 flashup = true;
 stealthed = false;
 flashval = 1.0;
+#endregion
 
 
-
-
-//metroidvania ability unlock system
+#region metroidvania ability unlock system
 //0 means do not have, 1 means level 1, 2 means lvl 2, etc.
 mv_shotUpgrade = 0;
 mv_jumpUpgrade = 0;
 mv_stealthUpgrade = 0;
+#endregion

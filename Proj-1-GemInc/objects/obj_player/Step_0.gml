@@ -2,74 +2,98 @@
 // LC: Dillon 2/1/20
 
 
-if keyboard_check(ord("S"))
-{
-	stealthed = true;
-	alarm[3] = room_speed * 2;
-	show_debug_message(flashval);
-}
+#region Direction Toggling
+//direction toggle. Do not make Else statement
+if keyboard_check(vk_right) then currFace = faceDir.right;
+if keyboard_check(vk_left) then currFace = faceDir.left;
 
-//Movement
+#endregion
+
+
+
+#region Horizontal Movement
 hspeed = (keyboard_check(vk_right) - keyboard_check(vk_left)) * moveSpeed;
 	//subtracting just takes the difference, and since they return 1, just gives pos and neg movespeed
-	
-//Gravity and jumping
+#endregion
 
+#region Gravity and jumping
+//Jump is difficult to make state-based, due to the overlapping of several different states.
+
+//ending hold
+if keyboard_check_released(vk_up) then endHold = true;
+
+
+//Jumping
+if keyboard_check(vk_space) {
 	
-	//Jump Acceleration/Hold Variable Jump
-if keyboard_check(vk_up) and jumpCounter < (jumpHold*room_speed){
 	//Initial Jump - check key pressed is too unreliable.
 	if !(jumped){
 		player_jump();// Jump script
 		jumped = true;
-		alarm[1] = room_speed * jumpTimer; //Makes it so you can't constantly jump.
+		jumpCounter = 0;
+		
+		
+		//set state (visual)
+		currentState = playerStates.jumping;
+		
 	}
-	if !endHold then vspeed += jumpAccel;
+	
+	//Jump Acceleration/Hold Variable Jump
+	if jumpCounter<(jumpHold*room_speed) and !endHold then vspeed += jumpAccel;
 }
 
-//acceleration timer
-if jumped then jumpCounter +=1; 
+//setting acceleration time.
+jumpCounter +=1; 
 jumpCounter = clamp(jumpCounter, -1, jumpHold*room_speed + 10);
 
-if keyboard_check_released(vk_up) then endHold = true;
+show_debug_message(gravity);
 
-//reset all variables on touchdown
-if place_meeting(x, y+1, obj_wall){ //apparently, need at least +2 to activate
+
+if place_meeting(x, y+2, obj_wall){
 	gravity = 0;
-	jumpCounter = 0;
-
+		
 }
 else {
 	gravity = gravVal;
+	alarm[1] = room_speed * landTimer; //Makes sure the timer doesn't end until you land.
+
 }
 
+#endregion
 
 
-
-//Shooting
-//direction toggle. Do not make Else statement
-if keyboard_check(vk_right) then shootRight = true;
-if keyboard_check(vk_left) then shootRight = false;
+#region Shooting
 
 if canShoot{
-	if keyboard_check(vk_space)
+	if keyboard_check(ord("A"))
     {
         canShoot = false;
         alarm[0] = room_speed * shootTimer;
 		
 		//set shooting direction
-		if shootRight then player_shoot(0)
+		if currFace = faceDir.right then player_shoot(0)
 		else player_shoot(180);
 
 		
 	}
 }
+#endregion
 
-//fine tune the details of different firing modes later, as long as abilities array is up, it'll be easy to change certain elements.
+#region Stealth Activation
+if mv_stealthUpgrade ==1{
+	if keyboard_check(ord("S"))
+	{
+		stealthed = true;
+		alarm[3] = room_speed * 2;
+	}
+}
+#endregion
 
 
-//MV state upgrades debug
 
+#region MV state upgrades 
+
+//debug keys
 if keyboard_check(ord("1")){
 	mv_shotUpgrade = 1;
 	mv_jumpUpgrade = 1;
@@ -78,21 +102,26 @@ if keyboard_check(ord("2")){
 	mv_shotUpgrade = 2;
 	mv_jumpUpgrade = 2;
 }
+if keyboard_check(ord("3")){
+	mv_stealthUpgrade = 1;
+}
+#endregion
 
 
 
-//Camera Operations
+#region Camera Operations
 currRoom = instance_position(x,y, obj_roomBox);
 // Doesn't work yet, fix cameras first
 if currRoom == noone {
 	lose_condition();
 	instance_destroy();
 }
+#endregion
 
 
-
-//Collisions
+#region Collisions
 if vspeed !=0 then collisions_vertical();
 if hspeed !=0 then collisions_horizontal();
 	//only check collisions when moving.
 	//ALWAYS CHECK COLLISIONS LAST, after movement code.
+#endregion
