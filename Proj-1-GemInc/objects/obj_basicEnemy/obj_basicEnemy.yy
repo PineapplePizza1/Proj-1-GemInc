@@ -43,6 +43,46 @@
             "enumb": 0,
             "eventtype": 1,
             "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "3f101386-56f8-4d70-99b1-6ae6bfb62879",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "fe9ba1e7-ed31-46b6-b36b-8f57d588e639",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 11,
+            "eventtype": 2,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "5d74fb29-1ff1-4962-a900-d1e82643a8ed",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "bac5465f-78aa-436e-afe0-74b282ec2de1",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
+        },
+        {
+            "id": "edef35af-c32f-46a8-8d8c-642988b6b1e7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "6d7ecbde-e26c-48ed-9736-a19395cfc835",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "d1580741-a48f-474c-96a9-225177c0c523"
         }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
@@ -130,6 +170,20 @@
             "resourceFilter": 1023,
             "value": "30",
             "varName": "playerDamage",
+            "varType": 0
+        },
+        {
+            "id": "d16e9bce-c21b-4d84-b24e-795a34b28c82",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "invulTime",
             "varType": 0
         }
     ],
