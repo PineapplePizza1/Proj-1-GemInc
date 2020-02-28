@@ -26,16 +26,24 @@ gravity = gravVal;
 //shader pixel values and texel value initialization
 upixelH = shader_get_uniform(shd_defShader1, "pixelH");
 upixelW = shader_get_uniform(shd_defShader1, "pixelW");
-texelW = texture_get_texel_width(sprite_get_texture(sprite_index,0));
-texelH = texture_get_texel_height(sprite_get_texture(sprite_index,0));
+texelW = 2*texture_get_texel_width(sprite_get_texture(sprite_index,0));
+texelH = 2*texture_get_texel_height(sprite_get_texture(sprite_index,0));
+flash = shader_get_uniform(shd_defShader1, "flash");
+
 
 //outline color
 outlineColor = shader_get_uniform(shd_defShader1, "outColor");
 color_array = array_create(4);
-color_array[0] = 0;
-color_array[1] = 0;
-color_array[2] = 255;
-color_array[3] = 1;
+color_array[0] = 0/255.0;
+color_array[1] = 0/255.0;
+color_array[2] = 255/255.0;
+color_array[3] = 1.0;
+
+damaged = false;
+flashup = true;
+stealthed = false;
+flashval = 1.0;
+
 
 
 

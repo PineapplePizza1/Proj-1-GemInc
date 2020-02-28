@@ -7,6 +7,7 @@ varying vec4 v_vColour;
 uniform float pixelH;
 uniform float pixelW;
 uniform float outColor[4]; 
+uniform float flash;
 
 void main()
 {
@@ -29,7 +30,8 @@ void main()
 	
 	
 	//set color to texture. 
-    gl_FragColor = (outline *(1.0 - iAlpha)) +  (v_vColour * texture2D( gm_BaseTexture, v_vTexcoord));
+	//outline sets outline color, flash controls the flashing or stealth of the player.
+    gl_FragColor = (outline *(1.0 - iAlpha)) +  (v_vColour * texture2D( gm_BaseTexture, v_vTexcoord)*flash);
 	
 	//set alpha
 	gl_FragColor.a = alpha;

@@ -2,6 +2,12 @@
 // LC: Dillon 2/1/20
 
 
+if keyboard_check(ord("S"))
+{
+	stealthed = true;
+	alarm[3] = room_speed * 2;
+	show_debug_message(flashval);
+}
 
 //Movement
 hspeed = (keyboard_check(vk_right) - keyboard_check(vk_left)) * moveSpeed;

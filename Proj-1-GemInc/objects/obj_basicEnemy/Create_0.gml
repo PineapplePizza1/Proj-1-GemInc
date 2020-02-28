@@ -4,3 +4,5 @@
 hp = maxHP;
 
 gravity = gravVal;
+
+damaged = false;

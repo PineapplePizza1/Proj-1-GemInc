@@ -73,6 +73,36 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
+        },
+        {
+            "id": "1568207b-f03c-48fd-aaa3-36dbf2b7555a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 2,
+            "eventtype": 2,
+            "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
+        },
+        {
+            "id": "7b5a417e-f1c3-4efc-b8d7-65738df1ffeb",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 3,
+            "eventtype": 2,
+            "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
+        },
+        {
+            "id": "db71cb73-2d40-4e6d-a7a4-f139df8184f1",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "6d7ecbde-e26c-48ed-9736-a19395cfc835",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
         }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
@@ -216,6 +246,20 @@
             "resourceFilter": 1023,
             "value": "10",
             "varName": "bulletDamage",
+            "varType": 0
+        },
+        {
+            "id": "12de8917-f2bf-419d-99dd-04220f74963d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "invulTimer",
             "varType": 0
         }
     ],
