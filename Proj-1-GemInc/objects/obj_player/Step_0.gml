@@ -10,17 +10,15 @@ if keyboard_check(vk_left) then currFace = faceDir.left;
 #endregion
 
 
-
 #region Horizontal Movement
 hspeed = (keyboard_check(vk_right) - keyboard_check(vk_left)) * moveSpeed;
 	//subtracting just takes the difference, and since they return 1, just gives pos and neg movespeed
+
 #endregion
 
 #region Gravity and jumping
 //Jump is difficult to make state-based, due to the overlapping of several different states.
 
-//ending hold
-if keyboard_check_released(vk_up) then endHold = true;
 
 
 //Jumping
@@ -32,9 +30,8 @@ if keyboard_check(vk_space) {
 		jumped = true;
 		jumpCounter = 0;
 		
-		
-		//set state (visual)
-		currentState = playerStates.jumping;
+		//STATE: set spriteState
+		currentState = spriteStates.jumping;
 		
 	}
 	
@@ -42,16 +39,26 @@ if keyboard_check(vk_space) {
 	if jumpCounter<(jumpHold*room_speed) and !endHold then vspeed += jumpAccel;
 }
 
+//ending hold
+if keyboard_check_released(vk_up) then endHold = true;
+if vspeed >0 then {
+	endHold = true;
+	jumped = true;
+}
+
 //setting acceleration time.
 jumpCounter +=1; 
 jumpCounter = clamp(jumpCounter, -1, jumpHold*room_speed + 10);
 
-show_debug_message(gravity);
 
 
 if place_meeting(x, y+2, obj_wall){
 	gravity = 0;
-		
+	
+	//STATE: grounded states spritesetting
+	if keyboard_check(vk_left) or keyboard_check(vk_right) then currentState = spriteStates.moving
+	else if currentState != spriteStates.shooting then currentState = spriteStates.standing;
+	
 }
 else {
 	gravity = gravVal;
@@ -73,7 +80,9 @@ if canShoot{
 		//set shooting direction
 		if currFace = faceDir.right then player_shoot(0)
 		else player_shoot(180);
-
+		
+		//STATE:set to shooting
+		currentState = spriteStates.shooting;
 		
 	}
 }
@@ -83,7 +92,7 @@ if canShoot{
 if mv_stealthUpgrade ==1{
 	if keyboard_check(ord("S"))
 	{
-		stealthed = true;
+		if currentHState == healthStates.healthy then currentHState = healthStates.stealthed;
 		alarm[3] = room_speed * 2;
 	}
 }
@@ -105,6 +114,14 @@ if keyboard_check(ord("2")){
 if keyboard_check(ord("3")){
 	mv_stealthUpgrade = 1;
 }
+#endregion
+
+
+#region Updating Damage
+//Add a damage self script. Should check current hp, and set death states accordingly.
+//player should be the only one in need of the damage self script. player bullets should be able to set the 
+//enemy's states accordingly. will need to add damaging state, that lets players chase. 
+//add more enemy shader values to the thing.
 #endregion
 
 

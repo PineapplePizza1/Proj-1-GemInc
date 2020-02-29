@@ -26,20 +26,23 @@ switch (argument0){
 		break;
 }
 
+if  currentState != chaseEnum.disabled{
 //When player is on same level, stop and shoot.
-if beh_detect_player_line() != noone and beh_detect_player_vision() != noone{
+if beh_detect_player_line() != noone and beh_detect_player_vision() != noone and damaged == false{
 	currentState = chaseEnum.shoot;
 }
 
 
 //whenever player is spotted, enter Chase state
-if beh_detect_player_vision() != noone and currentState != chaseEnum.disabled and currentState != chaseEnum.shoot{ //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
+if beh_detect_player_vision() != noone and currentState != chaseEnum.shoot{ //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
 	//time period is for wait period
 	currentState = chaseEnum.chase;
 	timeline_position = 250;
 }
+}
 
-
+if currentState == chaseEnum.disabled then flashval = 0.1
+else if damaged == false then flashval = 1.0;
 
 
 //behavior for all states

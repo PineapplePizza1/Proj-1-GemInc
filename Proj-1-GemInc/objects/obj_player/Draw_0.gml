@@ -1,8 +1,8 @@
 /// @description Draw Event, shader utilized
 // You can write your code in this editor
 
-//setting flash
-if (damaged) //can't use while, it stops the game.
+#region setting flash
+if (currentHState == healthStates.damaged) //can't use while, it stops the game.
 {
 	if flashval >1 then flashup = false;
 	if flashval <0 then flashup = true;
@@ -12,7 +12,11 @@ if (damaged) //can't use while, it stops the game.
 	
 }
 
-if stealthed then flashval = .25;
+if currentHState == healthStates.stealthed then flashval = .25;
+
+if currentHState == healthStates.respawn then flashval = 0.0;
+
+#endregion
 
 shader_set(shd_defShader1);
 shader_set_uniform_f(upixelW, texelW);

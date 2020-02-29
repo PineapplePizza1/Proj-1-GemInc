@@ -95,20 +95,20 @@
             "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
         },
         {
-            "id": "db71cb73-2d40-4e6d-a7a4-f139df8184f1",
+            "id": "cfe50e7d-690b-4a2a-90aa-b4201d427683",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "6d7ecbde-e26c-48ed-9736-a19395cfc835",
-            "enumb": 0,
-            "eventtype": 4,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 5,
+            "eventtype": 2,
             "m_owner": "515b8368-4589-42c2-8402-3ba57c0b77ef"
         }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -174,7 +174,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "-1",
+            "value": "-.4",
             "varName": "jumpAccel",
             "varType": 0
         },
@@ -230,7 +230,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".5",
+            "value": ".1",
             "varName": "landTimer",
             "varType": 0
         },
@@ -258,7 +258,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "5",
             "varName": "invulTimer",
             "varType": 0
         }

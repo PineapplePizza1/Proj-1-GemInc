@@ -2,27 +2,34 @@
 // Last Changed: Dillon 2/1/20
 
 #region Enums and States
-//Player's states are more complicated and less finite. Mainly used for sprites and damage.
+//Player's states are split into several different categories.
 
-enum playerStates
+enum spriteStates //functions primarily as a visual state, but can function as gameplay states when necessary.
 {
 	standing,
 	moving,
 	jumping,
-	landed,
+	shooting,
+	landed
+}
+	
+enum healthStates{
+	healthy,
+	stealthed,
 	damaged,
-	respawn,
-	stealthed
+	respawn
 	
 }
+
 enum faceDir
 {
 	left,
 	right
 }
 
-currentState = playerStates.standing;
+currentState = spriteStates.standing;
 currFace = faceDir.right;
+currentHState = healthStates.healthy;
 
 #endregion
 
@@ -43,6 +50,11 @@ fireSpeed = bulletSpeed;
 hp = maxHP;
 gravity = gravVal;
 damaged = false;
+
+//Respwan
+respawnX = x;
+respawnY = y;
+
 #endregion
 
 

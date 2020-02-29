@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "23f27f6f-20e3-4cbd-8f44-d552ba7827f6",
+            "Value": {
+                "id": "62179ce8-f029-45c5-a197-f163b09e9e35",
+                "resourcePath": "scripts\\damage_player\\damage_player.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2525b2e8-61a3-4f7a-b5ef-47e987db2e52",
             "Value": {
                 "id": "c0fb54ce-8012-4146-aa4c-df7f2dc43c4c",
@@ -1268,6 +1276,7 @@
         "abba4185-7cea-4372-bd20-d39f91b8533d",
         "5ff7f174-cf9c-4a59-b12a-6ce444660e89",
         "2cb50773-3279-4dcc-bc2c-cf5e8aafeeb0",
+        "23f27f6f-20e3-4cbd-8f44-d552ba7827f6",
         "5282f647-7957-469e-8b51-74f5576506e8",
         "ef9701df-502c-4bb9-b884-47a215d8f237",
         "c23a32b7-dd30-44ee-b8f7-1c0dde65d791",

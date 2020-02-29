@@ -1,4 +1,4 @@
 /// @description Damage Player
 
-damage_enemy(other, dmgVal);
+damage_player(dmgVal);
 instance_destroy();
