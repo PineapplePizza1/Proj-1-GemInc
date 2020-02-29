@@ -1,7 +1,8 @@
 //tracks player and checks to see if there are any walls in the way
 //RETURN = a little unusual, but if can see, will return player, as a way of saying true. just a easier access.
 
-if !util_player_exists() then exit;
+if !util_player_exists() then return noone;
+if obj_player.currentHState == healthStates.stealthed or obj_player.currentHState == healthStates.respawn then return noone;
 
 var playa = instance_find(obj_player,0);
 
