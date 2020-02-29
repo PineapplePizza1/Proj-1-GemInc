@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "05e723bc-bdb5-490e-b920-ddc78956a2d5",
+            "Value": {
+                "id": "ecd5d995-2bad-4e0e-b7a9-44446fc3a859",
+                "resourcePath": "objects\\obj_upgradePickup\\obj_upgradePickup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "07c7d2cb-a2a8-44a5-8832-63f7b3d13f04",
             "Value": {
                 "id": "59c76681-994d-4ef3-9a8f-3aaf15ca1a0a",
@@ -911,11 +919,27 @@
             }
         },
         {
+            "Key": "ab2881fe-2b43-4e2b-a54f-1727b315ac07",
+            "Value": {
+                "id": "047239f8-6727-4644-ae69-4e4542988c6f",
+                "resourcePath": "objects\\obj_checkpoint\\obj_checkpoint.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "abba4185-7cea-4372-bd20-d39f91b8533d",
             "Value": {
                 "id": "f38f09ba-23d7-43a9-972c-4f2db7ec880c",
                 "resourcePath": "scripts\\collisions_horizontal\\collisions_horizontal.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ac595d86-15fe-4f33-b9a8-d3a23fcc080d",
+            "Value": {
+                "id": "3abd5f58-ebcb-4401-bc79-cee511963c71",
+                "resourcePath": "objects\\obj_healthPickup\\obj_healthPickup.yy",
+                "resourceType": "GMObject"
             }
         },
         {

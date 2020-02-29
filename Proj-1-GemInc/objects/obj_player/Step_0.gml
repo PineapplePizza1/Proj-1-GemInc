@@ -89,7 +89,7 @@ if canShoot{
 #endregion
 
 #region Stealth Activation
-if mv_stealthUpgrade ==1{
+if upgrade_Array[2] == 1{
 	if keyboard_check(ord("S"))
 	{
 		if currentHState == healthStates.healthy then currentHState = healthStates.stealthed;
@@ -104,15 +104,15 @@ if mv_stealthUpgrade ==1{
 
 //debug keys
 if keyboard_check(ord("1")){
-	mv_shotUpgrade = 1;
-	mv_jumpUpgrade = 1;
+	upgrade_Array[0] = 1;
+	upgrade_Array[1]= 1;
 }
 if keyboard_check(ord("2")){
-	mv_shotUpgrade = 2;
-	mv_jumpUpgrade = 2;
+	upgrade_Array[0] = 2;
+	upgrade_Array[1] = 2;
 }
 if keyboard_check(ord("3")){
-	mv_stealthUpgrade = 1;
+	upgrade_Array[2] = 1;
 }
 #endregion
 

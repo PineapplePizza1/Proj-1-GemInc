@@ -4,7 +4,7 @@
 
 var jumpgrade = -5;
 
-switch (mv_shotUpgrade)
+switch (upgrade_Array[1]) //Jump upgrade level
 {
 	case 0:
 		jumpgrade = .5*jumpHeight;

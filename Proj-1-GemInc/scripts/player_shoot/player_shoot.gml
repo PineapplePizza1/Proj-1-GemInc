@@ -6,7 +6,7 @@
 var shotDamage = 0;
 var bulletUpgr = obj_bullet; 
 
-switch (mv_shotUpgrade)
+switch (upgrade_Array[0]) //Shot upgrade value
 {
 	case 0:
 		break;
@@ -24,4 +24,4 @@ switch (mv_shotUpgrade)
 		break;
 }
 
-if mv_shotUpgrade != 0 then shoot_object(bulletUpgr, argument0, obj_player.fireSpeed, shotDamage);
+if upgrade_Array[0] != 0 then shoot_object(bulletUpgr, argument0, obj_player.fireSpeed, shotDamage);

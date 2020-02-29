@@ -41,8 +41,11 @@ if beh_detect_player_vision() != noone and currentState != chaseEnum.shoot{ //{a
 }
 }
 
-if currentState == chaseEnum.disabled then flashval = 0.1
-else if damaged == false then flashval = 1.0;
+
+if damaged == false {
+	if currentState == chaseEnum.disabled then flashval = 0.1
+	else flashval = 1.0;
+}
 
 
 //behavior for all states

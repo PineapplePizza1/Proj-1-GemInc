@@ -93,8 +93,9 @@ flashval = 1.0;
 
 
 #region metroidvania ability unlock system
-//0 means do not have, 1 means level 1, 2 means lvl 2, etc.
-mv_shotUpgrade = 0;
-mv_jumpUpgrade = 0;
-mv_stealthUpgrade = 0;
+upgrade_Array = array_create(3)
+//for values0 means do not have, 1 means level 1, 2 means lvl 2, etc.
+upgrade_Array[0] = 0;//mv_shotUpgrade
+upgrade_Array[1] = 0;//mv_jumpUpgrade
+upgrade_Array[2] = 0;//mv_stealthUpgrade
 #endregion
