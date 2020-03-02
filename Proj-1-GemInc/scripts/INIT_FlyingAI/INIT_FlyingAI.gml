@@ -9,7 +9,16 @@
 } */
 
 
-//disable grav
+//disable gravity
+
+
+//Position and path pos to return to
+pathX = x;
+pathY = y;
+returnPosition = 0;
+
+if path_get_closed(flightPath) then pathAct = path_action_continue
+	else pathAct = path_action_reverse;
 
 //chase you
 sensor = noone;

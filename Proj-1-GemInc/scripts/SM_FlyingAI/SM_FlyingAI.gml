@@ -8,8 +8,8 @@ switch (argument0){
 	case chaseEnum.chase:
 		state_flyingchase();
 		break;
-	case chaseEnum.wait:
-		state_chaseWait();
+	case chaseEnum.wait: //use as return script
+		state_flyingreturn();
 		break;
 	case chaseEnum.idle:
 		hspeed = 0;
@@ -18,7 +18,7 @@ switch (argument0){
 		state_chaseDisabled();
 		break;
 	case chaseEnum.shoot:
-		state_flyingchase(); //adding shoot script
+		state_StopnShoot(); //adding shoot script
 		break;
 	default:
 		show_debug_message("Error: Out of State Machine");
@@ -27,18 +27,40 @@ switch (argument0){
 }
 
 if  currentState != chaseEnum.disabled{
-//When player is on same level, stop and shoot.
-if beh_detect_player_line() != noone and beh_detect_player_vision() != noone and damaged == false{
-	currentState = chaseEnum.shoot;
-}
+//have transitions for start path, end path, and continue path.
+//store the variables of where you left path, and mp_motion_step back to where you left.
+
+//on path, leave, get back on path, when gone. 
+//shoot, like every once in a while if can.
+
+//if see player, chase and take steps towards player. 
+//Only shoot if you can see them, only takes a second. keep taking steps, as behavior. 
+//activate shoot as timeline!!! standard shoot might be good.
+//return to path if outside bounds or don't see player.
+//maybe create a wall object that player can pass through, but enemies can't. safe zone. hard with collisions tho.
 
 
-//whenever player is spotted, enter Chase state
-if beh_detect_player_vision() != noone and currentState != chaseEnum.shoot{ //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
-	//time period is for wait period
-	currentState = chaseEnum.chase;
-	timeline_position = 250;
-}
+//whenever player is spotted, enter Chase state if within chase distance.
+sensor = beh_detect_player_vision();
+if sensor != noone 
+	{	
+		show_debug_message(point_distance(x,y, sensor.x, sensor.y))
+		if point_distance(x,y, sensor.x, sensor.y) < chaseDist
+		{
+			//transition out of patrol, preserve old vars
+			if currentState == chaseEnum.patrol {
+				//returnPosition = path_position;
+				//pathX = path_get_x(flightPath, returnPosition);
+				//pathY = path_get_y(flightPath, returnPosition);
+				path_end();
+			}
+			
+		//change state to chase
+		currentState = chaseEnum.chase;
+		target = sensor;
+
+		}
+	}
 }
 
 
@@ -49,5 +71,4 @@ if damaged == false {
 
 
 //behavior for all states
-util_jumpable();
 
