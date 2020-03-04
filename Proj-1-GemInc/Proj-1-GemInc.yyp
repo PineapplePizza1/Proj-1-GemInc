@@ -1199,6 +1199,14 @@
             }
         },
         {
+            "Key": "e6d2a05b-e78a-4209-bb12-f539f2fc396e",
+            "Value": {
+                "id": "4082af47-fdec-46cd-a7d5-8237b3fe15b7",
+                "resourcePath": "rooms\\DuplicateDemoRoomDZ\\DuplicateDemoRoomDZ.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e94aef3d-cad9-49aa-9a55-ac6f489e762c",
             "Value": {
                 "id": "d4c5ac18-ae23-454e-b8b3-b46a787e3bf7",
