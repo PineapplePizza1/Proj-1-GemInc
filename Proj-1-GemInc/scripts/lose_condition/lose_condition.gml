@@ -1,3 +1,4 @@
 ///Placeholder for lose condition script. Add the specific details you want later.
 
-draw_text(room_width/2, room_height/2, "Loser! You're a Loser!");
+draw_text(view_wport[0]* 0.5, view_hport[0] *0.5, "Loser! You're a Loser!");
+show_debug_message("Losing Message");
