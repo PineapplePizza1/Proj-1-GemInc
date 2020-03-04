@@ -44,7 +44,7 @@ if  currentState != chaseEnum.disabled{
 sensor = beh_detect_player_vision();
 if sensor != noone 
 	{	
-		show_debug_message(point_distance(x,y, sensor.x, sensor.y))
+
 		if point_distance(x,y, sensor.x, sensor.y) < chaseDist
 		{
 			//transition out of patrol, preserve old vars
