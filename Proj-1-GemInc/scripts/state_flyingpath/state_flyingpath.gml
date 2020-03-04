@@ -7,3 +7,8 @@ if path_index != flightPath {
 	//path_position = returnPosition; //return to where you left off.
 }
 
+if place_meeting(x+hspeed, y+vspeed, obj_wall) {
+	//if bump into wall, just go back to the beginning.
+	path_end();
+	currentState = chaseEnum.wait;
+}
