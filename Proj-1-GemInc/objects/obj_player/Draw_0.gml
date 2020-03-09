@@ -27,6 +27,6 @@ shader_set_uniform_f(flash, flashval);
 
 
 
-draw_self(); //draw the sprite
+if currentHState != healthStates.respawn then draw_self(); //draw the sprite, if not respawning
 
 shader_reset();

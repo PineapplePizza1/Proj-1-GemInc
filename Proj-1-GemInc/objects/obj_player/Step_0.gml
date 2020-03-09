@@ -117,7 +117,11 @@ if keyboard_check(ord("3")){
 #endregion
 
 
-#region Updating Damage
+#region Respawning
+if currentHState == healthStates.respawn{
+	x = -100;
+	y = -100;
+}
 //Add a damage self script. Should check current hp, and set death states accordingly.
 //player should be the only one in need of the damage self script. player bullets should be able to set the 
 //enemy's states accordingly. will need to add damaging state, that lets players chase. 
@@ -130,8 +134,9 @@ if keyboard_check(ord("3")){
 currRoom = instance_position(x,y, obj_roomBox);
 // Doesn't work yet, fix cameras first
 if currRoom == noone {
-	lose_condition();
-	instance_destroy();
+	if currentHState != healthStates.respawn{
+		damage_player(maxHP);
+	}
 }
 #endregion
 
