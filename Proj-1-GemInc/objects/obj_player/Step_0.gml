@@ -88,7 +88,15 @@ if canShoot{
 }
 #endregion
 
-#region Stealth Activation
+
+#region MV state upgrades 
+
+//Shoot Mode unlock
+if upgrade_Array[3] == 1{
+	if keyboard_check_pressed(ord("D")){
+	shootModeHack = !shootModeHack;
+}}
+
 if upgrade_Array[2] == 1{
 	if keyboard_check(ord("S"))
 	{
@@ -96,11 +104,6 @@ if upgrade_Array[2] == 1{
 		alarm[3] = room_speed * 2;
 	}
 }
-#endregion
-
-
-
-#region MV state upgrades 
 
 //debug keys
 if keyboard_check(ord("1")){
@@ -114,6 +117,11 @@ if keyboard_check(ord("2")){
 if keyboard_check(ord("3")){
 	upgrade_Array[2] = 1;
 }
+if keyboard_check(ord("4")){
+	upgrade_Array[3] = 1;
+}
+
+
 #endregion
 
 

@@ -13,15 +13,20 @@ switch (upgrade_Array[0]) //Shot upgrade value
 	case 1:
 		//do 10 damage
 		shotDamage = 10;
-		bulletUpgr = obj_bullet;
 		break;
 	case 2:
-		//disable for 3 sec
-		shotDamage = 3;
-		bulletUpgr = obj_bulletHack;
+		//do 30 damage
+		shotDamage = 30;
 		break;
 	default:
 		break;
 }
+
+//toggle bullet type
+if shootModeHack == true {
+	bulletUpgr = obj_bulletHack 
+	shotDamage = shotDamage/10; //divide damage by 10 to make it reasonably seconds
+}
+else bulletUpgr = obj_bullet;
 
 if upgrade_Array[0] != 0 then shoot_object(bulletUpgr, argument0, obj_player.fireSpeed, shotDamage);

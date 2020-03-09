@@ -44,6 +44,7 @@ jumpHold = .21; //rarely changes
 #region shoot variables
 canShoot = true;
 fireSpeed = bulletSpeed;
+shootModeHack = true;
 #endregion
 
 #region Health variables
@@ -93,9 +94,10 @@ flashval = 1.0;
 
 
 #region metroidvania ability unlock system
-upgrade_Array = array_create(3)
+upgrade_Array = array_create(4)
 //for values0 means do not have, 1 means level 1, 2 means lvl 2, etc.
-upgrade_Array[0] = 0;//mv_shotUpgrade
+upgrade_Array[0] = 0;//mv_shotDMGlvl
 upgrade_Array[1] = 0;//mv_jumpUpgrade
 upgrade_Array[2] = 0;//mv_stealthUpgrade
+upgrade_Array[3] = 0;//mv, Lethal bullet unlock. 1 = has.
 #endregion
