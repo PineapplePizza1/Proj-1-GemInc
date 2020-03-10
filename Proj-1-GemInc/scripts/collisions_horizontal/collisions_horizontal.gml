@@ -10,9 +10,10 @@ var coll = instance_place(x+hspeed, y, obj_wall);
 
 if (coll != noone){
 	var x_dis = coll.x - x;
-	
+	var truewidth = sprite_width;
+		if image_xscale <0 then truewidth = -truewidth;
 	//combine the distance from origin to sprite edge for both objects
-	var combinedWidth = (sprite_width/2 + coll.sprite_width/2); //this way, you can use any two object of any size/scale
+	var combinedWidth = (truewidth/2 + coll.sprite_width/2); //this way, you can use any two object of any size/scale
 		//Move x directly up to distance minus the sprite's width
 		//based on sign
 		
