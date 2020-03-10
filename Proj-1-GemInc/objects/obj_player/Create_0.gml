@@ -95,8 +95,8 @@ flashval = 1.0;
 #region metroidvania ability unlock system
 upgrade_Array = array_create(4)
 //for values0 means do not have, 1 means level 1, 2 means lvl 2, etc.
-upgrade_Array[0] = 0;//mv_shotDMGlvl
+upgrade_Array[0] = 1;//mv_shotDMGlvl
 upgrade_Array[1] = 0;//mv_jumpUpgrade
 upgrade_Array[2] = 0;//mv_stealthUpgrade
-upgrade_Array[3] = 0;//mv, Lethal bullet unlock. 1 = has.
+upgrade_Array[3] = 0;//mv, bullet unlocks, 0 = no shoot, 1 = hackign only, 2 = switch.
 #endregion

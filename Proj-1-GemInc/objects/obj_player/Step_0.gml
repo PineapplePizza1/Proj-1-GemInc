@@ -70,20 +70,21 @@ else {
 
 
 #region Shooting
-
-if canShoot{
-	if keyboard_check(ord("A"))
-    {
-        canShoot = false;
-        alarm[0] = room_speed * shootTimer;
+if upgrade_Array[3] >0 {
+	if canShoot{
+		if keyboard_check(ord("A"))
+		{
+			canShoot = false;
+			alarm[0] = room_speed * shootTimer;
 		
-		//set shooting direction
-		if currFace = faceDir.right then player_shoot(0)
-		else player_shoot(180);
+			//set shooting direction
+			if currFace = faceDir.right then player_shoot(0)
+			else player_shoot(180);
 		
-		//STATE:set to shooting
-		currentState = spriteStates.shooting;
+			//STATE:set to shooting
+			currentState = spriteStates.shooting;
 		
+		}
 	}
 }
 #endregion
@@ -92,7 +93,7 @@ if canShoot{
 #region MV state upgrades 
 
 //Shoot Mode unlock
-if upgrade_Array[3] == 1{
+if upgrade_Array[3] == 2{
 	if keyboard_check_pressed(ord("D")){
 	shootModeHack = !shootModeHack;
 }}
@@ -118,7 +119,7 @@ if keyboard_check(ord("3")){
 	upgrade_Array[2] = 1;
 }
 if keyboard_check(ord("4")){
-	upgrade_Array[3] = 1;
+	upgrade_Array[3] = 2;
 }
 
 
