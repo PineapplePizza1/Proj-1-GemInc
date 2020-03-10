@@ -2,7 +2,9 @@
 // You can write your code in this editor
 
 
+
 if instance_exists(followObj) {
+	
 	var nRoom = followObj.currRoom;
 	if nRoom != noone then cRoom = nRoom;
 	
@@ -20,10 +22,12 @@ if instance_exists(followObj) {
 		if followObj.x > currX+camera_get_view_width(defCam) - followBorder{
 			currX += followObj.moveSpeed;
 		}
-
-		if followObj.y < (currY+followBorder) then currY -= 5;
+		
+		var fallspeed = followObj.vspeed * sign(followObj.vspeed);
+		if fallspeed == 0 then fallspeed = followObj.moveSpeed;
+		if followObj.y < (currY+followBorder) then currY -= fallspeed;
 		if followObj.y > (currY+camera_get_view_height(defCam) - followBorder ){
-			currY += 5;
+			currY += fallspeed;
 		}
 		
 		//camera_set_view_pos(defCam, cRoom.x-(cRoom.RB_height/2), cRoom.y-(cRoom.RB_height/2));

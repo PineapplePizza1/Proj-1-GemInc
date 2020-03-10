@@ -14,4 +14,5 @@ view_set_camera(0, defCam);
 
 cRoom = noone; //set to default
 
-//Initialize, follow player.
+//Initialize to player's location
+camera_set_view_pos(defCam, followObj.x - cameraWidth/4 , followObj.y - cameraHeight *.75 ); 

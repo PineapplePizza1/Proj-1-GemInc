@@ -80,7 +80,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "75",
+            "value": "128",
             "varName": "followBorder",
             "varType": 0
         },
