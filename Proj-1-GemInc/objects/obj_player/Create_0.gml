@@ -68,7 +68,6 @@ currRoom = noone;
 
 
 
-
 #region Shader values
 //shader pixel values and texel value initialization
 upixelH = shader_get_uniform(shd_defShader1, "pixelH");

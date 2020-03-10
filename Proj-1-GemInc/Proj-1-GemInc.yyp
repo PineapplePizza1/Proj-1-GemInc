@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "1dc3fa7f-9130-4f97-8434-d1a5a2ef33bf",
-            "Value": {
-                "id": "cd90bbba-c050-4a46-a740-011c4e74f96e",
-                "resourcePath": "sprites\\spr_Axis_walk\\spr_Axis_walk.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "2100ff19-c8ea-4abe-9dca-0f439f815902",
             "Value": {
                 "id": "682dabc6-1716-4a4d-92a0-263676cb77b3",
@@ -202,7 +194,7 @@
             "Key": "2298808c-fc5c-48a0-ad13-d48dee829dc1",
             "Value": {
                 "id": "b55f165b-a4a2-4abc-9e48-579b96770ff4",
-                "resourcePath": "sprites\\spr_placeholder1\\spr_placeholder1.yy",
+                "resourcePath": "sprites\\spr_Axis_up1\\spr_Axis_up1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -618,7 +610,7 @@
             "Key": "65c3ad60-8fa9-4d02-8c23-454e95523834",
             "Value": {
                 "id": "82c6eddf-0553-4d2e-a340-c373db1fd8fd",
-                "resourcePath": "sprites\\spr_Axis_shoot\\spr_Axis_shoot.yy",
+                "resourcePath": "sprites\\spr_Axis_upf\\spr_Axis_upf.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -938,7 +930,7 @@
             "Key": "aa87c2aa-823b-4227-9f27-a7059bc39f78",
             "Value": {
                 "id": "09c0c197-4409-4dfc-bf6d-996e6ea2a973",
-                "resourcePath": "sprites\\spr_Axis_jump\\spr_Axis_jump.yy",
+                "resourcePath": "sprites\\spr_eggman\\spr_eggman.yy",
                 "resourceType": "GMSprite"
             }
         },
