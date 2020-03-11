@@ -703,6 +703,14 @@
             }
         },
         {
+            "Key": "741a638b-037b-4ba3-b537-063b5833287f",
+            "Value": {
+                "id": "1ed07043-ff07-448b-bb23-d2070367108d",
+                "resourcePath": "tilesets\\Tileset2\\Tileset2.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "74252396-ca5a-4269-9fcc-112cf4cd1417",
             "Value": {
                 "id": "3ccb3f33-2062-48de-bf8c-b2015e09137c",
@@ -1068,6 +1076,14 @@
                 "id": "db7637aa-59e9-41b5-9335-6027fc9cf869",
                 "resourcePath": "objects\\obj_door\\obj_door.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b0e2f9e7-54c7-4053-985e-7b389d99bd45",
+            "Value": {
+                "id": "b935dc24-ba3a-4c27-9e55-d910eb4ae7b4",
+                "resourcePath": "tilesets\\Tileset1\\Tileset1.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
