@@ -10,7 +10,10 @@
         "b009fce2-db82-4aff-a65e-9f4fe9c83771",
         "1a7f9285-9e7e-4347-aa4a-0e3a47f31cc7",
         "3be36da5-ce02-4b57-81e8-2a34d4babad1",
-        "19f60e03-9c01-483d-929e-667101cf7042"
+        "19f60e03-9c01-483d-929e-667101cf7042",
+        "b8dc7378-0ff3-452f-b6ce-0d9004ed1e59",
+        "38417ad5-c2ce-419c-bf66-f773e6283b98",
+        "d5cb95fa-941e-4ba1-8610-deffd2c7c58b"
     ],
     "filterType": "GMObject",
     "folderName": "GUI and Camera",

@@ -6,27 +6,50 @@
 var shotDamage = 0;
 var bulletUpgr = obj_bullet; 
 
-switch (upgrade_Array[0]) //Shot upgrade value
+if shootModeHack == true{
+	
+	//HACK
+	bulletUpgr = obj_bulletHack
+	
+	switch (upgrade_Array[0]) //HACK DMG VALS
+	{
+		case 0:
+			break;
+		case 1:
+			//disable for 3 seconds
+			shotDamage = 3;
+			break;
+		case 2:
+			//disable for 5 seconds
+			shotDamage = 5;
+			break;
+		default:
+			break;
+	}
+}
+else 
 {
-	case 0:
-		break;
-	case 1:
-		//do 10 damage
-		shotDamage = 10;
-		break;
-	case 2:
-		//do 30 damage
-		shotDamage = 30;
-		break;
-	default:
-		break;
+	//LETHAL
+	bulletUpgr = obj_bullet;
+	
+	switch (upgrade_Array[0]) //LETHAL DMG VALS
+	{
+		case 0:
+			break;
+		case 1:
+			//do 10 damage
+			shotDamage = 10;
+			break;
+		case 2:
+			//do 30 damage
+			shotDamage = 35;
+			break;
+		default:
+			break;
+			
+	}
 }
 
-//toggle bullet type
-if shootModeHack == true {
-	bulletUpgr = obj_bulletHack 
-	shotDamage = shotDamage/10; //divide damage by 10 to make it reasonably seconds
-}
-else bulletUpgr = obj_bullet;
+
 
 if upgrade_Array[0] != 0 then shoot_object(bulletUpgr, argument0, obj_player.fireSpeed, shotDamage);
