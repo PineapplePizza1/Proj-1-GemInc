@@ -3,7 +3,7 @@
 
 //check player exists
 if !util_player_exists() then exit;
-if obj_player.currentHState == healthStates.stealthed or obj_player.currentHState == healthStates.respawn or obj_player.currentHstate == healthStates.damaged then return noone;
+if obj_player.currentHState == healthStates.stealthed or obj_player.currentHState == healthStates.respawn or obj_player.currentHState == healthStates.damaged then return noone;
 
 var coll = collision_line(x,y, x+(5000*dir), y, obj_player, false, true);
 if  coll != noone
