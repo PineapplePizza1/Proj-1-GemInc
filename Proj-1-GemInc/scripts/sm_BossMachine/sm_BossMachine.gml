@@ -64,7 +64,7 @@ switch(currentPhase) {
 		break;
 	case bossPhases.Firing:
 		break;
-	case bossPhases.Chase:
+	case bossPhases.Idle:
 		break;
 	default:
 		break;
