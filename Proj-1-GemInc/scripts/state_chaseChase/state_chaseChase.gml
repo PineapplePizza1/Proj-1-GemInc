@@ -39,7 +39,7 @@ if sensor == noone  and timeline_position>260 {
 	currentState = chaseEnum.wait;	
 }
 //running
-act_speedScale(1.5);
+act_speedScale(1.75);
 act_move();
 
 

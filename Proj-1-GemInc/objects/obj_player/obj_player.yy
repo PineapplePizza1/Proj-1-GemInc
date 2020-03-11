@@ -258,7 +258,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "1.5",
             "varName": "invulTimer",
             "varType": 0
         },
@@ -272,7 +272,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": ".5",
+            "value": "3",
             "varName": "respawnTimer",
             "varType": 0
         },

@@ -12,8 +12,10 @@ currentSpeed = 0;
 hspeed = 0;
 vspeed = 0;
 
+//gravity checked in grounded_gravity and jump
 if disableCounter >= disableTimer
 {
 	disableCounter = 0;
 	currentState = chaseEnum.patrol;
+
 }
