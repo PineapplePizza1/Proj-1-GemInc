@@ -248,8 +248,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": ".5",
             "varName": "invulTimer",
+            "varType": 0
+        },
+        {
+            "id": "8ba89a4f-2615-4451-8bcd-6fac34db4815",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": ".5",
+            "varName": "respawnTimer",
             "varType": 0
         }
     ],

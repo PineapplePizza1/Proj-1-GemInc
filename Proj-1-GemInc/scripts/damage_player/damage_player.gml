@@ -10,7 +10,7 @@ with (obj_player){
 	if hp <= 0{
 		hp = 0;
 		currentHState = healthStates.respawn;
-		alarm[5] = room_speed * 5;
+		alarm[5] = room_speed * respawnTimer;
 		//the player loses here
 		lose_condition();
 	}

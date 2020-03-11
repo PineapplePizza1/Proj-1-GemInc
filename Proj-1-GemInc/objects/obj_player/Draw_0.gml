@@ -28,7 +28,6 @@ if (currentHState == healthStates.damaged) //can't use while, it stops the game.
 
 if currentHState == healthStates.stealthed then flashval = .25;
 
-if currentHState == healthStates.respawn then flashval = 0.0;
 
 #endregion
 
