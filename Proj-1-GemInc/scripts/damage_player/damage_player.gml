@@ -7,7 +7,7 @@ with (obj_player){
 		alarm[2] = room_speed*invulTimer;
 	}
 	
-	if hp <= 0{
+	if hp <= 0 and currentHState != healthStates.respawn{
 		hp = 0;
 		currentHState = healthStates.respawn;
 		alarm[5] = room_speed * respawnTimer;

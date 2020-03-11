@@ -15,8 +15,9 @@ if instance_exists(followObj) {
 			currX = camera_get_view_x(defCam);
 			currY = camera_get_view_y(defCam);
 		
-			//new room
+			
 			if cRoom != nRoom{
+				#region new room
 				cRoom = nRoom;
 				
 				//x and y vars
@@ -33,11 +34,11 @@ if instance_exists(followObj) {
 				
 				//Adjust the position if you didn't jump.
 				
-				if followObj.x < (xJump + followBorder) then xJump = xJump - (xJump+followBorder-followObj.x);
-				if followObj.x > xJump+(camera_get_view_width(defCam)-followBorder) then xJump = xJump + (followObj.x - ((xJump + camera_get_view_width(defCam)) - followBorder));
+				if followObj.x < (xJump + borderLeft) then xJump = xJump - (xJump+borderLeft-followObj.x);
+				if followObj.x > xJump+(camera_get_view_width(defCam)-borderRight) then xJump = xJump + (followObj.x - ((xJump + camera_get_view_width(defCam)) - borderRight));
 				
-				if followObj.y < (yJump + followBorder) then yJump = yJump - (yJump+followBorder-followObj.y);
-				if followObj.y > yJump+ (camera_get_view_height(defCam)-followBorder) then yJump = yJump + (followObj.y - ((yJump +camera_get_view_height(defCam)) - followBorder))				
+				if followObj.y < (yJump + borderUp) then yJump = yJump - (yJump+borderUp-followObj.y);
+				if followObj.y > yJump+ (camera_get_view_height(defCam)-borderDown) then yJump = yJump + (followObj.y - ((yJump +camera_get_view_height(defCam)) - borderDown))				
 				
 				
 				//clamp the jumps too.
@@ -47,21 +48,23 @@ if instance_exists(followObj) {
 				camera_set_view_pos(defCam, xJump, yJump);
 				
 				show_debug_message(yJump);
-
+				
+				#endregion
+				
 			}else{
 			
 			#region Camera Following
 			
 		
-			if followObj.x < (currX+followBorder) then currX -= followObj.moveSpeed;
-			if followObj.x > currX+camera_get_view_width(defCam) - followBorder{
+			if followObj.x < (currX+borderLeft) then currX -= followObj.moveSpeed;
+			if followObj.x > currX+camera_get_view_width(defCam) - borderRight{
 				currX += followObj.moveSpeed;
 			}
 		
 			var fallspeed = followObj.vspeed * sign(followObj.vspeed);
 			if fallspeed == 0 then fallspeed = followObj.moveSpeed;
-			if followObj.y < (currY+followBorder) then currY -= fallspeed;
-			if followObj.y > (currY+camera_get_view_height(defCam) - followBorder ){
+			if followObj.y < (currY+borderUp) then currY -= fallspeed;
+			if followObj.y > (currY+camera_get_view_height(defCam) - borderDown){
 				currY += fallspeed;
 			}
 			

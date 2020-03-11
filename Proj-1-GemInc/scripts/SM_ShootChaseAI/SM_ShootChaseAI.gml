@@ -46,6 +46,10 @@ if damaged == false {
 	if currentState == chaseEnum.disabled then flashval = 0.1
 	else flashval = 1.0;
 }
+else {
+	currentSpeed = 0;
+	hspeed = 0;
+} //stop moving when damaged.
 
 
 //behavior for all states

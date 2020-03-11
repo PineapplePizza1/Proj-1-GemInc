@@ -18,7 +18,12 @@ view_set_hport(0,cameraHeight);
 cRoom = noone; //set to default
 
 
-changedRooms = false; //var to track room changes.
 
 //Initialize to player's location
 camera_set_view_pos(defCam, (followObj.x - followBorder) - StartBordx , (followObj.y - cameraHeight + followBorder) + StartBordy ); 
+
+
+if borderLeft ==0 then borderLeft = followBorder;
+if borderRight ==0 then borderRight = followBorder;
+if borderUp ==0 then borderUp = followBorder;
+if borderDown ==0 then borderDown = followBorder;

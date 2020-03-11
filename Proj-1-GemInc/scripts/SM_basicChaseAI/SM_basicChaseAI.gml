@@ -36,6 +36,9 @@ if beh_detect_player_vision() != noone and currentState != chaseEnum.disabled { 
 if damaged == false {
 	if currentState == chaseEnum.disabled then flashval = 0.1
 	else flashval = 1.0;
+} else {
+	currentSpeed = 0;
+	hspeed = 0;
 }
 //show_debug_message(currentState)
 
