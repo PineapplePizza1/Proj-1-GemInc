@@ -58,6 +58,7 @@ respawnY = y;
 
 #endregion
 
+stealthable = true;
 
 #region Camera values
 //current room, important for camera

@@ -97,6 +97,9 @@ if upgrade_Array[3] >0 {
 		
 			//STATE:set to shooting
 			currentState = spriteStates.shooting;
+			
+			//get out of stealth
+			if currentHState == healthStates.stealthed then currentHState = healthStates.healthy ;
 		
 		}
 	}
@@ -113,11 +116,27 @@ if upgrade_Array[3] == 2{
 	shootModeHack = !shootModeHack;
 }}
 
+//stealth
 if upgrade_Array[2] == 1{
-	if keyboard_check(ord("S"))
-	{
-		if currentHState == healthStates.healthy then currentHState = healthStates.stealthed;
-		alarm[3] = room_speed * 2;
+	if stealthable {
+		if keyboard_check(ord("S"))
+		{
+			
+			if currentHState == healthStates.healthy {
+				
+				currentHState = healthStates.stealthed;
+			
+				stealthable = false;
+				
+				alarm[3] = room_speed * stealthDuration;
+				
+				//stealth cooldown
+				
+				alarm[6] = room_speed * (stealthCool + stealthDuration);
+			
+			}
+			
+		}
 	}
 }
 
