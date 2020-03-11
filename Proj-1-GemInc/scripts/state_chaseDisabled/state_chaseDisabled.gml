@@ -8,6 +8,9 @@
 	
 
 disableCounter +=1;
+currentSpeed = 0;
+hspeed = 0;
+vspeed = 0;
 
 if disableCounter >= disableTimer
 {
