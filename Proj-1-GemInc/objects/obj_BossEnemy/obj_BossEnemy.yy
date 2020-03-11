@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_BossEnemy",
     "eventList": [
-        {
-            "id": "5a0b0c16-f660-45ca-8ede-cc20956ab892",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "515b8368-4589-42c2-8402-3ba57c0b77ef",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "2a951e84-3972-4b40-8e30-23a5c2f60f66"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
