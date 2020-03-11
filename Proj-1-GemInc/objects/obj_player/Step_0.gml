@@ -29,20 +29,31 @@ if keyboard_check(vk_space) {
 		player_jump();// Jump script
 		jumped = true;
 		jumpCounter = 0;
+		endHold = false;
 		
 		//STATE: set spriteState
 		currentState = spriteStates.jumping;
 		
-	}
+		//set alarm initially, so that every jump for sure gets reset
+		alarm[1] = room_speed * landTimer;
+		
+	} else{
+		//Jump Acceleration/Hold Variable Jump
+		if jumpCounter<(jumpHold*room_speed) and !endHold {
+			vspeed += jumpAccel;
+			
+		}
 	
-	//Jump Acceleration/Hold Variable Jump
-	if jumpCounter<(jumpHold*room_speed) and !endHold then vspeed += jumpAccel;
+	}
 }
+else if !endHold then endHold = true;
 
-//ending hold
-if keyboard_check_released(vk_up) then endHold = true;
-if vspeed >0 then {
-	endHold = true;
+
+
+
+
+//falling
+if vspeed >0 then { //falling
 	jumped = true;
 }
 
@@ -50,11 +61,11 @@ if vspeed >0 then {
 jumpCounter +=1; 
 jumpCounter = clamp(jumpCounter, -1, jumpHold*room_speed + 10);
 
-
+	
 
 if place_meeting(x, y+2, obj_wall){
 	gravity = 0;
-	
+
 	//STATE: grounded states spritesetting
 	if keyboard_check(vk_left) or keyboard_check(vk_right) then currentState = spriteStates.moving
 	else if currentState != spriteStates.shooting then currentState = spriteStates.standing;
@@ -63,8 +74,8 @@ if place_meeting(x, y+2, obj_wall){
 else {
 	gravity = gravVal;
 	alarm[1] = room_speed * landTimer; //Makes sure the timer doesn't end until you land.
-
 }
+
 
 #endregion
 
