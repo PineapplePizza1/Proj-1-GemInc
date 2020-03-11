@@ -15,8 +15,7 @@ if instance_exists(followObj) {
 		currX = camera_get_view_x(defCam);
 		currY = camera_get_view_y(defCam);
 		
-		var spradiusX = followObj.sprite_width/2;
-		var spradiusY = followObj.sprite_height/2;
+
 	
 		if followObj.x < (currX+followBorder) then currX -= followObj.moveSpeed;
 		if followObj.x > currX+camera_get_view_width(defCam) - followBorder{

@@ -15,4 +15,6 @@ view_set_camera(0, defCam);
 cRoom = noone; //set to default
 
 //Initialize to player's location
-camera_set_view_pos(defCam, followObj.x - cameraWidth/4 , followObj.y - cameraHeight *.75 ); 
+var spradiusX = followObj.sprite_width/2;
+var spradiusY = followObj.sprite_height/2;
+camera_set_view_pos(defCam, (followObj.x - spradiusX - followBorder) - StartBordx , (followObj.y - cameraHeight + spradiusY + followBorder) + StartBordy ); 

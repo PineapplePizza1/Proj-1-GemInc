@@ -111,6 +111,34 @@
             "value": "720",
             "varName": "cameraHeight",
             "varType": 0
+        },
+        {
+            "id": "9c759d87-0d0d-4ccb-ac80-fb3a9c90f30b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "StartBordx",
+            "varType": 0
+        },
+        {
+            "id": "0df6cd9d-5482-4a0d-a602-380367612653",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "StartBordy",
+            "varType": 0
         }
     ],
     "solid": false,

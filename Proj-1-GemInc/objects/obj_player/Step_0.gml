@@ -9,6 +9,9 @@ if keyboard_check(vk_left) then currFace = faceDir.left;
 
 #endregion
 
+//stuff you can't do while respawning
+if currentHState != healthStates.respawn
+{
 
 #region Horizontal Movement
 hspeed = (keyboard_check(vk_right) - keyboard_check(vk_left)) * moveSpeed;
@@ -101,6 +104,7 @@ if upgrade_Array[3] >0 {
 #endregion
 
 
+
 #region MV state upgrades 
 
 //Shoot Mode unlock
@@ -116,6 +120,20 @@ if upgrade_Array[2] == 1{
 		alarm[3] = room_speed * 2;
 	}
 }
+
+
+
+#endregion
+
+}else{
+	
+	gravity = 0;
+	hspeed = 0;
+	vspeed = 0;
+	
+}
+
+#region Debug tools
 
 //debug keys
 if keyboard_check(ord("1")){
@@ -133,21 +151,7 @@ if keyboard_check(ord("4")){
 	upgrade_Array[3] = 2;
 }
 
-
 #endregion
-
-
-#region Respawning
-if currentHState == healthStates.respawn{
-	x = -100;
-	y = -100;
-}
-//Add a damage self script. Should check current hp, and set death states accordingly.
-//player should be the only one in need of the damage self script. player bullets should be able to set the 
-//enemy's states accordingly. will need to add damaging state, that lets players chase. 
-//add more enemy shader values to the thing.
-#endregion
-
 
 
 #region Camera Operations
