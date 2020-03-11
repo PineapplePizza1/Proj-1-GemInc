@@ -1,5 +1,7 @@
 /// @description CreateMusic
 
-nMusic = noone;
+nMusic = startMusic;
 
-cMusic = nMusic
+cMusic = nMusic;
+
+if playOnStart then audio_play_sound(nMusic, 3, true);
