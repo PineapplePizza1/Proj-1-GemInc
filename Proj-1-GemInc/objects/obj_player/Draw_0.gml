@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 #region Setting sprite
-if upgrade_Array[0] >= 2 then sprite_index = spr_Axis_up1;
+if upgrade_Array[3] >= 2 then sprite_index = spr_Axis_up1;
 if upgrade_Array[2] >= 1 then sprite_index = spr_Axis_upf;
 
 if currentState == spriteStates.moving then image_speed = 1 else image_speed = 0;

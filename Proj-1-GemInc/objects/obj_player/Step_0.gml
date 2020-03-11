@@ -155,6 +155,7 @@ if keyboard_check(ord("4")){
 
 
 #region Camera Operations
+
 currRoom = instance_position(x,y, obj_roomBox);
 // Doesn't work yet, fix cameras first
 if currRoom == noone {
