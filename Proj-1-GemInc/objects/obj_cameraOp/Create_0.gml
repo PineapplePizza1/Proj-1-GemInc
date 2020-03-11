@@ -11,10 +11,14 @@ camera_destroy(destroycam);
 	//Destroying camera, because certain camera functions only work with cameras you create.
 view_set_camera(0, -1);
 view_set_camera(0, defCam);
+//set viewport size
+view_set_wport(0,cameraWidth);
+view_set_hport(0,cameraHeight);
 
 cRoom = noone; //set to default
 
+
+changedRooms = false; //var to track room changes.
+
 //Initialize to player's location
-var spradiusX = followObj.sprite_width/2;
-var spradiusY = followObj.sprite_height/2;
-camera_set_view_pos(defCam, (followObj.x - spradiusX - followBorder) - StartBordx , (followObj.y - cameraHeight + spradiusY + followBorder) + StartBordy ); 
+camera_set_view_pos(defCam, (followObj.x - followBorder) - StartBordx , (followObj.y - cameraHeight + followBorder) + StartBordy ); 

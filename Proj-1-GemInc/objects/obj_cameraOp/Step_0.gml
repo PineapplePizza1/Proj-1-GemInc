@@ -6,37 +6,77 @@
 if instance_exists(followObj) {
 	
 	var nRoom = followObj.currRoom;
-	if nRoom != noone then cRoom = nRoom;
 	
-	if cRoom != noone{
-		//basic vers
+	
+	if nRoom != noone{
 		
+		if cRoom != noone{
+					
+			currX = camera_get_view_x(defCam);
+			currY = camera_get_view_y(defCam);
 		
-		currX = camera_get_view_x(defCam);
-		currY = camera_get_view_y(defCam);
-		
+			//new room
+			if cRoom != nRoom{
+				cRoom = nRoom;
+				
+				//x and y vars
+				var xJump = currX;
+				var yJump = currY;
+				
+				//Directional transition jumps
+				if followObj.x < currX then xJump  = (currX - camera_get_view_width(defCam))
+				else if followObj.x > currX+camera_get_view_width(defCam) then xJump = (currX + camera_get_view_width(defCam));
+				
+				if followObj.y < currY then yJump  = currY - camera_get_view_height(defCam)
+				else if followObj.y > currY+camera_get_view_height(defCam) then yJump = currY + camera_get_view_height(defCam) ;
+				
+				
+				//Adjust the position if you didn't jump.
+				
+				if followObj.x < (xJump + followBorder) then xJump = xJump - (xJump+followBorder-followObj.x);
+				if followObj.x > xJump+(camera_get_view_width(defCam)-followBorder) then xJump = xJump + (followObj.x - ((xJump + camera_get_view_width(defCam)) - followBorder));
+				
+				if followObj.y < (yJump + followBorder) then yJump = yJump - (yJump+followBorder-followObj.y);
+				if followObj.y > yJump+ (camera_get_view_height(defCam)-followBorder) then yJump = yJump + (followObj.y - ((yJump +camera_get_view_height(defCam)) - followBorder))				
+				
+				
+				//clamp the jumps too.
+				xJump = clamp(xJump, nRoom.x, nRoom.x+(nRoom.RB_width - camera_get_view_width(defCam)));
+				yJump = clamp(yJump, nRoom.y, nRoom.y+(nRoom.RB_height - camera_get_view_height(defCam)));
+				
+				camera_set_view_pos(defCam, xJump, yJump);
+				
+				show_debug_message(yJump);
 
-	
-		if followObj.x < (currX+followBorder) then currX -= followObj.moveSpeed;
-		if followObj.x > currX+camera_get_view_width(defCam) - followBorder{
-			currX += followObj.moveSpeed;
-		}
+			}else{
+			
+			#region Camera Following
+			
 		
-		var fallspeed = followObj.vspeed * sign(followObj.vspeed);
-		if fallspeed == 0 then fallspeed = followObj.moveSpeed;
-		if followObj.y < (currY+followBorder) then currY -= fallspeed;
-		if followObj.y > (currY+camera_get_view_height(defCam) - followBorder ){
-			currY += fallspeed;
-		}
+			if followObj.x < (currX+followBorder) then currX -= followObj.moveSpeed;
+			if followObj.x > currX+camera_get_view_width(defCam) - followBorder{
+				currX += followObj.moveSpeed;
+			}
 		
-		//camera_set_view_pos(defCam, cRoom.x-(cRoom.RB_height/2), cRoom.y-(cRoom.RB_height/2));
-		currX = clamp(currX, cRoom.x, cRoom.x+(cRoom.RB_width - camera_get_view_width(defCam)));
-		currY = clamp(currY, cRoom.y, cRoom.y+(cRoom.RB_height - camera_get_view_height(defCam)));
+			var fallspeed = followObj.vspeed * sign(followObj.vspeed);
+			if fallspeed == 0 then fallspeed = followObj.moveSpeed;
+			if followObj.y < (currY+followBorder) then currY -= fallspeed;
+			if followObj.y > (currY+camera_get_view_height(defCam) - followBorder ){
+				currY += fallspeed;
+			}
+			
+			
+			//camera_set_view_pos(defCam, cRoom.x-(cRoom.RB_height/2), cRoom.y-(cRoom.RB_height/2));
+			currX = clamp(currX, cRoom.x, cRoom.x+(cRoom.RB_width - camera_get_view_width(defCam)));
+			currY = clamp(currY, cRoom.y, cRoom.y+(cRoom.RB_height - camera_get_view_height(defCam)));
 		
 		
+			camera_set_view_pos(defCam, currX, currY);
 		
-		camera_set_view_pos(defCam, currX, currY);
+			#endregion
+			}
 		
+		} else cRoom = nRoom;
 		
 		
 	}
