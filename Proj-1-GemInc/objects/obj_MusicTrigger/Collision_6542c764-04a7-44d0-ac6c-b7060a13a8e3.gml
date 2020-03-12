@@ -9,3 +9,4 @@ if instance_exists(obj_AudioManager){
 		nMusic = carryFile;
 	}
 }
+instance_destroy()
