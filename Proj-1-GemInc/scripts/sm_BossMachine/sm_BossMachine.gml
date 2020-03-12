@@ -1,71 +1,99 @@
 //runs state machines based off phase
+var iGuess = argument0;
+
+
+
+
 switch(currentPhase) {
+	
 	case bossPhases.Chase:
 	
-		#region Entire Chase Script
-		switch (argument0){
-			case chaseEnum.patrol: //Same 
-				state_chasePatrol();
-				break;
-			case chaseEnum.chase:
-				state_chaseChase();
-				break;
-			case chaseEnum.wait:
-				state_chaseWait();
-				break;
-			case chaseEnum.idle:
-				hspeed = 0;
-				break;
-			case chaseEnum.disabled:
-				state_chaseDisabled();
-				break;
-			case chaseEnum.shoot:
-				state_StopnShoot(); //adding shoot script
-				break;
-			default:
-				show_debug_message("Error: Out of State Machine");
-				hspeed = 0;
-				break;
-			}
-
-		if  currentState != chaseEnum.disabled{
-		//When player is on same level, stop and shoot.
-		if beh_detect_player_line() != noone and beh_detect_player_vision() != noone and damaged == false{
-			currentState = chaseEnum.shoot;
-		}
-
-		//whenever player is spotted, enter Chase state
-		if beh_detect_player_vision() != noone and currentState != chaseEnum.shoot{ //{and (timeline_position <440 or timeline_position > 500) }timeline position is the waiting period in Wait state
-			//time period is for wait period
-			currentState = chaseEnum.chase;
-			timeline_position = 250;
-		}
-		}
-
-
-		if damaged == false {
-			if currentState == chaseEnum.disabled then flashval = 0.1
-			else flashval = 1.0;
-		}
-		else {
-			currentSpeed = 0;
-			hspeed = 0;
-		} //stop moving when damaged.
-
-
-		//behavior for all states
-		util_jumpable();
-
-		#endregion
+	
+		state_Boss3();
 		
 		break;
+		
 	case bossPhases.PathPatrol:
+	
+
+		
+		SM_FlyingAI(iGuess);
 		
 		break;
+		
 	case bossPhases.Firing:
+	
+		state_Boss1();
+		
 		break;
+		
 	case bossPhases.Idle:
+	
+		gravVal = startGrav;
+		
+		if beh_detect_player_vision() != noone then phasePosition = 0;
+		
 		break;
+		
 	default:
+		show_debug_message("ERROR: out of machine, Boss");
 		break;
+		
+		
 }
+
+//set gravity according to phases
+if currentPhase == bossPhases.PathPatrol then gravVal = 0 else if currentPhase != bossPhases.Firing then gravVal = startGrav;
+//set speed to slower on firing
+if currentPhase == bossPhases.Firing then moveSpeed = 2 else moveSpeed = startSpeed;
+//halt path if not on path patrol
+if currentPhase != bossPhases.PathPatrol then path_end();
+
+
+
+
+#region Phase setting "Timeline"
+
+//increment and clamp
+if phasePosition !=-1 then phasePosition ++;
+
+
+//setting phase
+if phasePosition == -1{ 
+	currentPhase = bossPhases.Idle;
+}
+else if phasePosition <= chasePhasePos { 
+	
+	if timeline_index != basicChaseAI_tl then timeline_index = basicChaseAI_tl;
+	currentPhase = bossPhases.Chase;
+	
+	}
+else if phasePosition <= flightPhasePos {
+	
+	if phasePosition == flightPhasePos then currentState = chaseEnum.wait;
+	currentPhase = bossPhases.PathPatrol;
+}
+else if phasePosition <= gunnerPhasePos{
+	
+	if timeline_index != BossTimeline1 then timeline_index = BossTimeline1;
+	
+	//DEBUG
+	show_debug_message("POG");
+	
+	currentPhase = bossPhases.Firing;
+}
+else if phasePosition >= totalPhaseTimeline {
+	//DEBUG
+	show_debug_message("POGGER");
+	phasePosition = 0;
+}
+else {
+	show_debug_message("ERROR: out of boss phase timeline");
+	phasePosition = 0;
+}
+
+phasePosition = clamp(phasePosition, -1, totalPhaseTimeline +5);
+
+
+
+#endregion

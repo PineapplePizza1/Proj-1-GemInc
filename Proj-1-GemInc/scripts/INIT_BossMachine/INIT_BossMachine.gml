@@ -21,6 +21,12 @@ currentPhase = bossPhases.Idle;
 currentState = chaseEnum.patrol;
 
 
+//jumping
+//whoops, jumped
+//special var
+jumped = true;
+jumpCounter = 0;
+jumpTimer = 60;
 
 //Position and path pos to return to
 pathX = x;
@@ -41,4 +47,27 @@ disableCounter = 0;
 //currentspeed, instead of movespeed for running
 //and makes it so wall detection goes with scaled speed, and etc.
 currentSpeed = moveSpeed;
+
+
+//gravity check workaround
+//startWorking 
+startGrav = gravVal;
+startSpeed = moveSpeed;
+
+//floating direction
+randDirection = 0;
+randomize();
+
+
+#region Phase Timer
+//Since states already use premade timelines.
+phasePosition = -1;
+
+chasePhasePos = chasePhasePos * room_speed;
+flightPhasePos = flightPhasePos * room_speed;
+gunnerPhasePos = gunnerPhasePos * room_speed;
+totalPhaseTimeline = totalPhaseTimeline * room_speed;
+
+
+#endregion
 

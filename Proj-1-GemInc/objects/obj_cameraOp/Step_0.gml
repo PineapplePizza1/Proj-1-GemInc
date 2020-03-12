@@ -17,6 +17,7 @@ if instance_exists(followObj) {
 		
 			
 			if cRoom != nRoom{
+				
 				#region new room
 				cRoom = nRoom;
 				
