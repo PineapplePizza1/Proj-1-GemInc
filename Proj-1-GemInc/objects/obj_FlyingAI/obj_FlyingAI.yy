@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_FlyingAI",
     "eventList": [
-        
+        {
+            "id": "fd942731-7688-4497-ad25-de2d19fe15f7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "f86ca6f1-a6a1-447f-a1a5-9b35842fcbf6"
+        }
     ],
     "maskSpriteId": "d2499c6b-c660-436b-9668-60ddeed0a876",
     "overriddenProperties": [
