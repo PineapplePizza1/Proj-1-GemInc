@@ -4,6 +4,6 @@ if cMusic == snd_MainTheme{
 	nMusic = snd_secret1
 } else if cMusic == snd_secret1 {
 	nMusic = snd_secret2
-} else {
+} else if cMusic == snd_secret2{
 	nMusic = snd_MainTheme
 }
