@@ -53,3 +53,4 @@ else
 
 
 if upgrade_Array[0] != 0 then shoot_object(bulletUpgr, argument0, obj_player.fireSpeed, shotDamage);
+audio_play_sound(snd_sound5,2,false)

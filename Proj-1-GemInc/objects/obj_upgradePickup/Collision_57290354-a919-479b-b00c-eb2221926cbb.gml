@@ -6,5 +6,5 @@ with (other)
 {
 	upgrade_Array[ability] = level;
 }
-
+audio_play_sound(snd_sound1,4,false)
 instance_destroy();

@@ -5,6 +5,7 @@ with (obj_player){
 		hp -= argument0;
 		currentHState = healthStates.damaged;
 		alarm[2] = room_speed*invulTimer;
+		audio_play_sound(snd_sound2,4,false)
 	}
 	
 	if hp <= 0 and currentHState != healthStates.respawn{
