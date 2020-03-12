@@ -11,8 +11,6 @@ with (obj_player){
 		hp = 0;
 		currentHState = healthStates.respawn;
 		alarm[5] = room_speed * respawnTimer;
-		//the player loses here
-		lose_condition();
 	}
 	
 }
