@@ -150,7 +150,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "208",
             "varName": "borderLeft",
             "varType": 0
         },
@@ -164,7 +164,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "208",
             "varName": "borderRight",
             "varType": 0
         },
@@ -178,7 +178,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "128",
             "varName": "borderUp",
             "varType": 0
         },
@@ -192,7 +192,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "128",
             "varName": "borderDown",
             "varType": 0
         }
