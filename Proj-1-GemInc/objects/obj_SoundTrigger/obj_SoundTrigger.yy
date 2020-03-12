@@ -42,12 +42,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "snd_sound3",
             "varName": "soundFile",
             "varType": 5
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "1bcaec3a-0b32-4114-8096-0b0a5e5477dd",
     "visible": true
 }
