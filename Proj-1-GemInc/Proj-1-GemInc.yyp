@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "4a9dd655-2258-4b7f-911a-3b5c2c49523e",
+            "Value": {
+                "id": "c9ce9ba3-ad48-4dfe-b9c0-a88b171884b0",
+                "resourcePath": "extensions\\Platforms_and_Pits\\Platforms_and_Pits.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "4d0fa867-eb59-40d3-9416-ca2f084f7482",
             "Value": {
                 "id": "bdb908b2-5a4c-4f9a-bf28-e7b61e1ee253",
@@ -807,11 +815,27 @@
             }
         },
         {
+            "Key": "83d8b547-09b5-46fa-87b7-4d08822c3a5a",
+            "Value": {
+                "id": "de3213a5-38bd-48dd-84a5-bc8a6d39c3e3",
+                "resourcePath": "sprites\\Tile_platformsAndPits_16by16\\Tile_platformsAndPits_16by16.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "84c126ec-35de-4a83-ac1c-e7432ce6eb9f",
             "Value": {
                 "id": "5b1d47e6-f50a-475a-9eb6-8f58f4476ba2",
                 "resourcePath": "sounds\\snd_sound4\\snd_sound4.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "87cf8e4e-cd33-45df-9084-6c07c8536b4d",
+            "Value": {
+                "id": "14164175-ca12-4fba-b9f1-d0d694d4ae68",
+                "resourcePath": "sprites\\Grad_nightSky\\Grad_nightSky.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1215,6 +1239,14 @@
             }
         },
         {
+            "Key": "cd030fd0-04f0-47a9-93a9-a4a28fc358fb",
+            "Value": {
+                "id": "8548b6f5-2be7-4a33-b620-d0ebaddba775",
+                "resourcePath": "sprites\\Grad_BlueSky\\Grad_BlueSky.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cde79ccc-f48d-4ee7-b0db-9e594ed5dcc5",
             "Value": {
                 "id": "7e26834b-16a7-439b-bdd5-e852bc270196",
@@ -1351,6 +1383,14 @@
             }
         },
         {
+            "Key": "e8f6a037-8df2-4045-862b-161a9b131a18",
+            "Value": {
+                "id": "57a0ca97-7911-4c52-ab0f-4c282c4e5e29",
+                "resourcePath": "sprites\\Tiles_platformsAndPits_8by8\\Tiles_platformsAndPits_8by8.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e94aef3d-cad9-49aa-9a55-ac6f489e762c",
             "Value": {
                 "id": "d4c5ac18-ae23-454e-b8b3-b46a787e3bf7",
@@ -1379,6 +1419,14 @@
             "Value": {
                 "id": "74990d9d-e67b-4446-8354-cee28daf2dfc",
                 "resourcePath": "views\\ea9ded68-e498-40c1-863d-73b47eca6dae.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ec56d7f3-1d9e-4e50-9166-21c4e7fb7bde",
+            "Value": {
+                "id": "0ed072f1-9b81-4e28-8b79-2bf4f7b01e1e",
+                "resourcePath": "views\\ec56d7f3-1d9e-4e50-9166-21c4e7fb7bde.yy",
                 "resourceType": "GMFolder"
             }
         },
