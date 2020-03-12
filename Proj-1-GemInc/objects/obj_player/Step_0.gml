@@ -152,7 +152,6 @@ if upgrade_Array[2] == 1{
 	
 }
 
-if currentHState = healthStates.respawn then lose_condition();
 
 #region Debug tools
 /*

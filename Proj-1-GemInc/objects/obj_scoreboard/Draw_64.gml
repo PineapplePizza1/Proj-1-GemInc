@@ -44,6 +44,9 @@ if instance_exists(obj_BossEnemy)
 		draw_text(.5 * view_wport[0], 64, "XETRO");
 	
 	}
+	
+	if cenDisplay = true then draw_text(view_wport[0]* 0.5, view_hport[0] *0.5, cenText);
 }
+
 
 
