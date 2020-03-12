@@ -1,3 +1,5 @@
+/// @description hotfix
+
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -15,7 +17,8 @@ if (damaged) //can't use while, it stops the game.
 
 
 //direction facing
-if hspeed > 0 then image_xscale = 1 else image_xscale = -1;
+if direction < 90 or direction <270 then image_xscale = 1;
+if direction > 90 and direction <270 then image_xscale = -1;
 
 
 shader_set(shd_defShader1);
