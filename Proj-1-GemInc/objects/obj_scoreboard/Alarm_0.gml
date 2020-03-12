@@ -1,4 +1,3 @@
 /// @description Text Reset
 
-cenText = "";
-cenDisplay = false;
+game_restart();
