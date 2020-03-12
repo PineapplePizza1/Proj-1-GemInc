@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "43a95b22-caa3-4749-b442-5049f34c79d0",
+            "Value": {
+                "id": "0586e34b-15a7-43b5-b311-dcbb6b7ed024",
+                "resourcePath": "sounds\\snd_Title\\snd_Title.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4488914d-adea-43cf-a37a-62627f88e094",
             "Value": {
                 "id": "f792d6f9-5911-4125-abde-9307f25ecd91",
@@ -540,6 +548,14 @@
                 "id": "20395bb7-8dee-4673-a89a-5763dc223414",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51cce8a1-eb04-4ef1-bf3c-e0a0fd3f395d",
+            "Value": {
+                "id": "2c5e12c0-2fa8-4d97-8d38-6be5c3f26106",
+                "resourcePath": "extensions\\Basic_Platformer_Tiles\\Basic_Platformer_Tiles.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -724,6 +740,14 @@
                 "id": "3ccb3f33-2062-48de-bf8c-b2015e09137c",
                 "resourcePath": "sprites\\spr_plane\\spr_plane.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "76fc992d-fdd7-4e65-a4fc-770727359faf",
+            "Value": {
+                "id": "7a71178a-01ab-433c-ae41-6471c6a959b7",
+                "resourcePath": "tilesets\\til_platformtiles_tileset\\til_platformtiles_tileset.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1327,6 +1351,14 @@
             }
         },
         {
+            "Key": "d929e08d-8b32-4752-866f-f2733360a3ce",
+            "Value": {
+                "id": "062cd209-4b29-47f8-9b1b-a8f0563d3166",
+                "resourcePath": "sprites\\til_platformtiles\\til_platformtiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d94175db-4b4a-4826-b5bb-dcb7d1521344",
             "Value": {
                 "id": "8465be27-467e-4454-9dcd-90f44f1fe1ab",
@@ -1460,6 +1492,14 @@
                 "id": "8f16ef3f-bb76-4734-9acb-3c2b07645ecc",
                 "resourcePath": "scripts\\act_turn\\act_turn.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f16fe43f-f7cc-4d3e-acf2-ecd189af2b40",
+            "Value": {
+                "id": "f61a7a1f-fa7c-4114-890d-42ecb23aad8e",
+                "resourcePath": "sprites\\bg_brickwall\\bg_brickwall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
