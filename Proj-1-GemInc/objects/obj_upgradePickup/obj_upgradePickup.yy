@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "05e723bc-bdb5-490e-b920-ddc78956a2d5"
+        },
+        {
+            "id": "d87bfe98-3d58-4906-a21b-e5cb0222063c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "05e723bc-bdb5-490e-b920-ddc78956a2d5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -59,6 +69,20 @@
             "value": "1",
             "varName": "upgrLevel",
             "varType": 0
+        },
+        {
+            "id": "feab119d-e59b-4d34-bae2-3aab9cfa7a1f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_placeholder5",
+            "varName": "spriteUSE",
+            "varType": 5
         }
     ],
     "solid": false,
