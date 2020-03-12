@@ -152,7 +152,10 @@ if upgrade_Array[2] == 1{
 	
 }
 
+if currentHState = healthStates.respawn then lose_condition();
+
 #region Debug tools
+/*
 
 //debug keys
 if keyboard_check(ord("1")){
@@ -169,6 +172,7 @@ if keyboard_check(ord("3")){
 if keyboard_check(ord("4")){
 	upgrade_Array[3] = 2;
 }
+*/
 
 #endregion
 
